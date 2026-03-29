@@ -1,0 +1,366 @@
+/* Article Body Styles - Based on Figma Design */
+
+.article-body {
+  font-family: "DM Sans", "Noto Sans JP", sans-serif;
+  color: #2f2f2f;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.article-body > * + * {
+  margin-top: 1.5em;
+}
+
+/* H2 - 32px bold, full width */
+.article-body h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #15152b;
+  margin-top: 86px;
+  margin-bottom: 13px;
+}
+
+/* H3 - 26px bold with green left bar */
+.article-body h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #15152b;
+  margin-top: 48px;
+  margin-bottom: 13px;
+  padding-left: 16px;
+  border-left: 6px solid #15cf78;
+}
+
+/* H4 - 24px bold with green background stripe */
+.article-body h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #15152b;
+  margin-top: 40px;
+  margin-bottom: 13px;
+  padding: 2px 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(21, 207, 120, 0.2) 0%,
+    rgba(21, 207, 120, 0.2) 100%
+  ),
+  linear-gradient(90deg, #fff 0%, #fff 100%);
+}
+
+/* H5 - 20px bold */
+.article-body h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #15152b;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+/* H6 - 18px bold */
+.article-body h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #15152b;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* Paragraph */
+.article-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-body p + p {
+  margin-top: 1em;
+}
+
+/* Bold text with highlight */
+.article-body strong {
+  font-weight: 700;
+  color: #15152b;
+  background: linear-gradient(
+    transparent 60%,
+    rgba(62, 207, 115, 0.4) 60%
+  );
+}
+
+/* Links */
+.article-body a {
+  color: #15cf78;
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  opacity: 0.8;
+}
+
+/* Unordered list */
+.article-body ul {
+  list-style: disc;
+  padding-left: 44px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.article-body ul li {
+  line-height: 2.2;
+  font-weight: 500;
+  color: #15152b;
+}
+
+/* Ordered list */
+.article-body ol {
+  list-style: decimal;
+  padding-left: 44px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.article-body ol li {
+  line-height: 2.2;
+  font-weight: 500;
+  color: #15152b;
+}
+
+/* Blockquote */
+.article-body blockquote {
+  border-left: 4px solid #15cf78;
+  padding: 16px 24px;
+  background: rgba(21, 207, 120, 0.05);
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0;
+}
+
+.article-body blockquote p {
+  color: #2f2f2f;
+  font-style: normal;
+}
+
+/* Images */
+.article-body img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+
+/* Image placeholder */
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 200px;
+  background: #f0f3f8;
+  border: 2px dashed #c0c8d8;
+  border-radius: 10px;
+  padding: 32px 24px;
+  margin: 24px 0;
+}
+
+.image-placeholder-icon {
+  font-size: 32px;
+}
+
+.image-placeholder-text {
+  color: #5a6478;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.image-placeholder-path {
+  color: #a0a8b8;
+  font-size: 11px;
+  font-family: 'DM Sans', monospace;
+  background: #e4e8f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Table */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.article-body thead th {
+  background: #15cf78;
+  color: white;
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.article-body tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.article-body tbody tr:nth-child(even) {
+  background: #f8faff;
+}
+
+/* Code */
+.article-body code {
+  background: #f0f2f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.article-body pre {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.article-body pre code {
+  background: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* HR */
+.article-body hr {
+  border: none;
+  height: 1px;
+  background: #ebeef5;
+  margin: 48px 0;
+}
+
+/* ============================
+   Chat Block
+   ============================ */
+.article-body .chat-block,
+.article-body .chat-block * {
+  border: none;
+  box-shadow: none;
+}
+
+.chat-block {
+  background: #f8faff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Human message - LEFT aligned (質問する側) */
+.chat-human {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.chat-human-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ebeef5;
+}
+
+.chat-human-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
+}
+
+.chat-human-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chat-human .chat-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #767f93;
+}
+
+.chat-human .chat-bubble {
+  background: #eef1f6;
+  color: #2f2f2f;
+  padding: 12px 18px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* AI message - RIGHT aligned (教える側) */
+.chat-ai {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.chat-ai-row {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 90%;
+}
+
+.chat-ai-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ebeef5;
+}
+
+.chat-ai-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
+}
+
+.chat-ai-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.chat-ai .chat-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #15152b;
+  margin-right: 4px;
+}
+
+.chat-ai .chat-bubble {
+  background: #15cf78;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
+}

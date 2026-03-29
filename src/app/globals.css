@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green: #15cf78;
+  --color-green-light: rgba(21, 207, 120, 0.2);
+  --color-green-lighter: rgba(62, 207, 115, 0.4);
+  --color-main-black: #15152b;
+  --color-sub-gray: #767f93;
+  --color-gray: #868686;
+  --color-body: #2f2f2f;
+  --color-bg: #f8faff;
+  --color-slightly-gray: #ebeef5;
+  --color-light-gray: #dfdfdf;
+  --font-sans: "DM Sans", "Noto Sans JP", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-main-black);
+  font-family: var(--font-sans);
+}
