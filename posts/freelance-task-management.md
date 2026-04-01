@@ -1,6 +1,7 @@
 ---
 title: "フリーランスのタスク管理が「続かない」本当の理由と、今日から使える解決策"
 description: "フリーランスのタスク管理が続かない原因は、ツールが「チーム向け」に作られているから。個人で案件を回すフリーランスに本当に必要なタスク管理の考え方と、具体的な運用方法を現役フリーランスが解説します。"
+thumbnail: "/column/images/articles/freelance-task-management/thumbnail.png"
 date: "2026/03/29"
 category: "フリーランス"
 tags: ["タスク管理", "フリーランス"]
@@ -10,8 +11,8 @@ writer:
   bio: "フリーランス・クリエイター向けのタスク管理・業務効率化に関する情報を発信しています。現役のWebディレクター・デザイナーが実体験をもとに執筆。"
 ---
 
-![フリーランスのタスク管理が続かない原因を解説するイメージ](/images/articles/freelance-task-management/01.png)
-<!-- 画像未設定: フリーランスがPC前で複数のタスク管理ツールを開いて困っている様子のイメージ -->
+![フリーランスのタスク管理が続かない原因を解説するイメージ](/column/images/articles/freelance-task-management/01.jpg)
+<!-- 画像: フリーランスがPC前で複数のタスク管理ツールを開いて困っている様子のイメージ -->
 
 ## フリーランスのタスク管理が続かない3つの根本原因
 
@@ -55,7 +56,7 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">タスク管理ツール、もう3つ目なんですけど全部続かなくて…。自分の意志が弱いんですかね？</div>
@@ -63,7 +64,7 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">意志の問題じゃないですよ。そのツール、チームで使う前提で作られていませんか？ フリーランスが1人で使うなら「開いて2秒で今日やることが見える」くらいシンプルじゃないと、続かなくて当然です。</div>
@@ -74,8 +75,8 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 
 ## フリーランスに本当に必要なタスク管理とは
 
-![シンプルなタスク管理の考え方を示す図解](/images/articles/freelance-task-management/02.png)
-<!-- 画像未設定: 「今日やること」「今週の締切」「抜け漏れゼロ」の3要素を示す図解 -->
+![シンプルなタスク管理の考え方を示す図解](/column/images/articles/freelance-task-management/02.jpg)
+<!-- 画像: 「今日やること」「今週の締切」「抜け漏れゼロ」の3要素を示す図解 -->
 
 ここからは、実際にフリーランスとして案件を回してきた経験をもとに、**本当に機能するタスク管理の考え方**を解説します。
 
@@ -119,7 +120,7 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">確かに、Slackとメールとチャットワーク全部見に行くの大変で…。結局どこに何があるか分からなくなるんですよね</div>
@@ -127,7 +128,7 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">連絡ツールはクライアントに合わせるしかないですからね。大事なのは「タスクだけは1箇所」にすること。依頼が来たらコピペで1箇所に集める。これだけで抜け漏れは激減しますよ。</div>
@@ -138,8 +139,8 @@ Notionは自由度が高いことで人気ですが、裏を返せば**自分で
 
 ## フリーランスにおすすめのタスク管理ツール比較
 
-![フリーランス向けタスク管理ツールの比較](/images/articles/freelance-task-management/03.png)
-<!-- 画像未設定: Todoist / Notion / Trello / TASKUL の比較表の図解 or 各ツールのロゴ並び -->
+![フリーランス向けタスク管理ツールの比較](/column/images/articles/freelance-task-management/03.jpg)
+<!-- 画像: Todoist / Notion / Trello / TASKUL の比較表の図解 or 各ツールのロゴ並び -->
 
 ここからは、フリーランスが実際に使えるタスク管理ツールを比較します。「チーム向け」ではなく**個人で使いやすいかどうか**の視点で評価しています。
 
@@ -181,8 +182,7 @@ Trelloはカンバン方式のタスク管理ツールです。
 
 ### TASKUL：フリーランス専用AIで選ぶなら
 
-![TASKULのダッシュボード画面](/images/articles/freelance-task-management/04.png)
-<!-- 画像未設定: TASKULの実際の画面キャプチャ（ダッシュボードのタスク一覧画面） -->
+![TASKULのダッシュボード画面 - 今日のタスクと今週の納期が一目でわかる](/column/images/articles/freelance-task-management/04.jpg)
 
 TASKULはフリーランス・クリエイター専用に作られたAIタスク管理ツールです。
 
@@ -197,8 +197,8 @@ TASKULはフリーランス・クリエイター専用に作られたAIタスク
 
 ## タスク管理を「続ける」ための3つのコツ
 
-![タスク管理を続けるコツのイメージ](/images/articles/freelance-task-management/05.png)
-<!-- 画像未設定: 朝のルーティンでタスクを確認している様子のイメージ、またはチェックリスト風の図解 -->
+![タスク管理を続けるコツのイメージ](/column/images/articles/freelance-task-management/05.jpg)
+<!-- 画像: 朝のルーティンでタスクを確認している様子のイメージ、またはチェックリスト風の図解 -->
 
 ツールを選んだだけでは、タスク管理は続きません。以下の3つのコツを実践してください。
 

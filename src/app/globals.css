@@ -16,9 +16,71 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   color: var(--color-main-black);
   font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Global hover animations */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* CTA button hover */
+a[class*="bg-green"] {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+a[class*="bg-green"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 207, 120, 0.35);
+}
+a[class*="bg-green"]:active {
+  transform: translateY(0);
+}
+
+/* Card hover */
+a[class*="group"]:hover {
+  transform: translateY(-3px);
+}
+a[class*="group"] {
+  transition: transform 0.25s ease;
+}
+
+/* Sidebar banner hover */
+aside a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+aside a:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Nav link hover */
+header nav a:not([class*="bg-green"]) {
+  position: relative;
+}
+header nav a:not([class*="bg-green"])::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #15cf78;
+  transition: width 0.25s ease;
+}
+header nav a:not([class*="bg-green"]):hover::after {
+  width: 100%;
+}
+
+/* Footer link hover */
+footer a {
+  transition: color 0.2s ease;
+}
+footer a:hover {
+  color: #15cf78;
 }

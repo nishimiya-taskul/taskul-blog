@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -60,6 +61,7 @@ export function getPostBySlug(slug: string): Post {
   }
 
   const processedContent = remark()
+    .use(remarkGfm)
     .use(html, { sanitize: false })
     .processSync(content);
 

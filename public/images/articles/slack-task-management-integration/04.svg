@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <filter id="ds" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#15cf78"/>
+    </marker>
+  </defs>
+  <rect width="800" height="200" rx="12" fill="#f8f9fb"/>
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">今日から始める 3ステップ</text>
+  <!-- Step 1 -->
+  <rect x="30" y="60" width="220" height="120" rx="10" fill="#fff" filter="url(#ds)"/>
+  <circle cx="65" cy="90" r="16" fill="#15cf78"/>
+  <text x="65" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+  <text x="150" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">課題を特定する</text>
+  <text x="140" y="120" text-anchor="middle" font-size="11" fill="#666">「登録が面倒」</text>
+  <text x="140" y="138" text-anchor="middle" font-size="11" fill="#666">「全体像が見えない」</text>
+  <text x="140" y="156" text-anchor="middle" font-size="11" fill="#666">「見落としが多い」</text>
+  <!-- Arrow -->
+  <path d="M260 120 L290 120" stroke="#15cf78" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <!-- Step 2 -->
+  <rect x="300" y="60" width="220" height="120" rx="10" fill="#fff" filter="url(#ds)"/>
+  <circle cx="335" cy="90" r="16" fill="#15cf78"/>
+  <text x="335" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text>
+  <text x="430" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a2e">無料プランで試す</text>
+  <text x="410" y="120" text-anchor="middle" font-size="11" fill="#666">1つ選んで</text>
+  <text x="410" y="138" text-anchor="middle" font-size="11" fill="#666">1週間本気で使う</text>
+  <text x="410" y="156" text-anchor="middle" font-size="11" fill="#666">実案件のタスクで検証</text>
+  <!-- Arrow -->
+  <path d="M530 120 L560 120" stroke="#15cf78" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <!-- Step 3 -->
+  <rect x="570" y="60" width="200" height="120" rx="10" fill="#15cf78" filter="url(#ds)"/>
+  <circle cx="605" cy="90" r="16" fill="#fff"/>
+  <text x="605" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#15cf78">3</text>
+  <text x="690" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1つに絞る</text>
+  <text x="670" y="120" text-anchor="middle" font-size="11" fill="#fff">合うものに決めたら</text>
+  <text x="670" y="138" text-anchor="middle" font-size="11" fill="#fff">他は削除する</text>
+  <text x="670" y="156" text-anchor="middle" font-size="11" fill="#fff">この割り切りが大事</text>
+</svg>

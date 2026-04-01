@@ -13,6 +13,7 @@ export default function ArticleBody({ contentHtml }: ArticleBodyProps) {
     if (!ref.current) return;
 
     // Convert HTML comments into visible placeholder instructions
+    // and hide the broken img tag above it
     const walker = document.createTreeWalker(
       ref.current,
       NodeFilter.SHOW_COMMENT,
@@ -27,6 +28,18 @@ export default function ArticleBody({ contentHtml }: ArticleBodyProps) {
       }
     }
     for (const { node, text } of comments) {
+      // Hide the broken img before this comment
+      const prev = node.previousSibling as HTMLElement | null;
+      if (prev?.tagName === "IMG") {
+        prev.style.display = "none";
+      }
+      // Also check the previous element sibling (might have whitespace text nodes in between)
+      const prevEl = (node as unknown as { previousElementSibling?: HTMLElement }).previousElementSibling
+        ?? node.parentElement?.querySelector(`img[alt]`);
+      if (prevEl?.tagName === "IMG" && prevEl.closest("p")?.contains(node)) {
+        prevEl.style.display = "none";
+      }
+
       const placeholder = document.createElement("div");
       placeholder.className = "image-placeholder";
       placeholder.innerHTML = `
@@ -34,20 +47,14 @@ export default function ArticleBody({ contentHtml }: ArticleBodyProps) {
         <div class="image-placeholder-text">${text.replace("画像未設定: ", "")}</div>
       `;
       node.parentNode?.insertBefore(placeholder, node.nextSibling);
+      node.parentNode?.removeChild(node);
     }
 
-    // Replace broken images with placeholder
+    // Also hide any remaining broken images (without comments)
     const images = ref.current.querySelectorAll("img");
     images.forEach((img) => {
       img.onerror = () => {
-        const placeholder = document.createElement("div");
-        placeholder.className = "image-placeholder";
-        placeholder.innerHTML = `
-          <div class="image-placeholder-icon">📷</div>
-          <div class="image-placeholder-text">${img.alt || "画像を挿入"}</div>
-          <div class="image-placeholder-path">${img.src.replace(window.location.origin, "")}</div>
-        `;
-        img.parentNode?.replaceChild(placeholder, img);
+        img.style.display = "none";
       };
     });
   }, [contentHtml]);

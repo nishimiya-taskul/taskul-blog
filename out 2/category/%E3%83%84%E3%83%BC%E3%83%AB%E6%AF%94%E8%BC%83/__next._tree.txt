@@ -1,0 +1,10 @@
+:HL["/column/_next/static/chunks/0pm0obid0ulzk.css","style"]
+:HL["/column/_next/static/chunks/0iq1gbyxdi0i3.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+JP:wght@400;500;700;900&display=swap","style"]
+:HL["/column/images/sidebar-banner.png","image"]
+:HL["/column/images/articles/slack-task-management-integration/thumbnail.png","image"]
+:HL["/column/images/articles/excel-project-management-limit/thumbnail.png","image"]
+:HL["/column/images/articles/freelance-task-management/thumbnail.png","image"]
+:HL["/column/images/articles/notion-task-management-alternative/thumbnail.png","image"]
+:HL["/column/images/articles/illustrator-project-management/thumbnail.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"category","param":null,"prefetchHints":0,"slots":{"children":{"name":"category","param":{"type":"d","key":"%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E6%25AF%2594%25E8%25BC%2583","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"IXBv2xHWXSHjii1iALZcP"}

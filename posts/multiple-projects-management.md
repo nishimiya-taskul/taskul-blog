@@ -1,6 +1,7 @@
 ---
 title: "複数案件を同時に回すフリーランスの案件管理術｜抱えすぎてパンクする前に"
 description: "フリーランスが複数案件を同時進行で回すための案件管理方法を解説。案件の優先順位づけ、スケジュール管理、クライアント対応の効率化まで、パンクを防ぐ具体的なノウハウを紹介します。"
+thumbnail: "/column/images/articles/multiple-projects-management/thumbnail.png"
 date: "2026/03/26"
 category: "フリーランス"
 tags: ["案件管理", "フリーランス"]
@@ -10,8 +11,8 @@ writer:
   bio: "フリーランス・クリエイター向けのタスク管理・業務効率化に関する情報を発信しています。現役のWebディレクター・デザイナーが実体験をもとに執筆。"
 ---
 
-![複数案件を同時に管理するフリーランスのイメージ](/images/articles/multiple-projects-management/01.png)
-<!-- 画像未設定: 複数のクライアント案件が同時に動いている様子のイメージ、またはパンクしそうなデスクの写真 -->
+![複数案件を同時に管理するフリーランスのイメージ](/column/images/articles/multiple-projects-management/01.jpg)
+<!-- 画像: 複数のクライアント案件が同時に動いている様子のイメージ、またはパンクしそうなデスクの写真 -->
 
 ## 「案件を断れない」フリーランスの末路
 
@@ -58,8 +59,8 @@ writer:
 
 ### 原則3：キャパシティを数値で把握する
 
-![週間キャパシティの計算例](/images/articles/multiple-projects-management/02.png)
-<!-- 画像未設定: 週40時間に対して各案件の必要時間を積み上げたバーチャート or 表の図解 -->
+![週間キャパシティの計算例](/column/images/articles/multiple-projects-management/02.jpg)
+<!-- 画像: 週40時間に対して各案件の必要時間を積み上げたバーチャート or 表の図解 -->
 
 「なんとなく忙しい」ではなく、**自分のキャパシティを数字で把握する**ことが重要です。
 
@@ -118,8 +119,8 @@ writer:
 
 ## 具体的なツール活用法
 
-![案件管理ツールの活用イメージ](/images/articles/multiple-projects-management/03.png)
-<!-- 画像未設定: Googleカレンダーのブロック管理例 or スプレッドシートの案件管理表のスクショ -->
+![案件管理ツールの活用イメージ](/column/images/articles/multiple-projects-management/03.jpg)
+<!-- 画像: Googleカレンダーのブロック管理例 or スプレッドシートの案件管理表のスクショ -->
 
 ### Googleカレンダーで「ブロック管理」
 
@@ -154,8 +155,7 @@ writer:
 
 ### TASKUL（AIで自動管理）
 
-![TASKULで複数案件を一元管理している画面](/images/articles/multiple-projects-management/04.png)
-<!-- 画像未設定: TASKULのダッシュボードで複数案件のタスクが一覧表示されている画面キャプチャ -->
+![TASKULのダッシュボード - 複数案件のタスクと納期を一元管理](/column/images/articles/multiple-projects-management/04.jpg)
 
 TASKULはフリーランス専用のAIタスク管理ツールです。
 
@@ -175,8 +175,8 @@ TASKULはフリーランス専用のAIタスク管理ツールです。
 
 ## 案件を断る技術
 
-![案件を断る判断基準のイメージ](/images/articles/multiple-projects-management/05.png)
-<!-- 画像未設定: 「断るべきサイン」のチェックリスト風図解 -->
+![案件を断る判断基準のイメージ](/column/images/articles/multiple-projects-management/05.jpg)
+<!-- 画像: 「断るべきサイン」のチェックリスト風図解 -->
 
 「案件管理がうまくなる」ことと同じくらい重要なのが、**案件を適切に断る技術**です。
 
