@@ -8,6 +8,7 @@ import TableOfContents from "@/components/TableOfContents";
 import ChatAnimator from "@/components/ChatAnimator";
 import ShareButtons from "@/components/ShareButtons";
 import PrevNextNav from "@/components/PrevNextNav";
+import FAQ from "@/components/FAQ";
 import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/posts";
 import "../article.css";
 
@@ -231,6 +232,11 @@ export default async function ArticlePage({
               <ArticleBody contentHtml={post.contentHtml} />
               <ChatAnimator />
             </div>
+
+            {/* FAQ */}
+            {post.faq && post.faq.length > 0 && (
+              <FAQ items={post.faq} />
+            )}
 
             {/* CTA Banner */}
             <div className="flex flex-col gap-[23px]">
