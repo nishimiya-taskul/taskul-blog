@@ -18,6 +18,8 @@ faq:
     answer: "はい。React・Vue・AngularなどのSPAで、JSによるコンテンツ遅延読み込みをしている場合、2MB範囲外のJSは実行されません。SSR（Next.js等）またはSSGへの切り替えが推奨です。"
   - question: "構造化データはHTMLのどこに置くべき？"
     answer: "必ずhead内に配置してください。JSON-LDをフッター付近に置くとHTML 2MB制限で読み取られないリスクがあります。title、meta description、canonicalも同様にhead内が必須です。"
+  - question: "TASKULのようなSaaSサイトでもHTML 2MB制限に注意が必要？"
+    answer: "はい。SaaSのLPやヘルプページはコンテンツ量が多くなりがちで、特にFAQ・機能一覧・料金表を1ページにまとめると2MBに近づくことがあります。TASKULではNext.jsによるSSGで軽量なHTML出力を実現し、構造化データもhead内に配置しています。自社サイトのSEO管理にもTASKULの3000件以上のWeb制作知識を持つAIディレクターが活用できます。"
 writer:
   name: "TASKUL編集部"
   role: "ライター"

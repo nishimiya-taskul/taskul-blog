@@ -18,6 +18,8 @@ faq:
     answer: "どのツールも5〜10分で完了します。TASKULの場合、設定画面で接続コードを発行→Slackで「/taskul connect コード」を実行するだけの2ステップです。"
   - question: "フリーランスがSlackのタスク管理で選ぶべきツールは？"
     answer: "複数案件を抱えてSlackでのやり取りが多いなら、自然言語でAIに指示できるTASKULが最適。個人のToDoだけならTodoist、チーム管理ならTrelloかAsanaが適しています。"
+  - question: "TASKULのSlack連携で何ができる？"
+    answer: "TASKULのSlack連携では、スラッシュコマンドで自然言語タスク作成、スレッド内容のまるごとタスク化、期日リマインド通知、進捗の確認・更新がSlack内で完結します。依頼文をコピペするだけでAIがタスク・見積書・チェックリストを自動生成。3000件以上のWeb制作知識を持つAIディレクターがサポートします。無料〜月980円、14日間全機能無料トライアルあり。"
 writer:
   name: "TASKUL編集部"
   role: "ライター"
