@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <link rel="icon" href="https://taskul-ai.com/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="https://taskul-ai.com/images/logo-taskul.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
           rel="stylesheet"

@@ -40,7 +40,9 @@ export async function generateMetadata({
       siteName: "TASKUL コラム",
       images: [
         {
-          url: "https://taskul-ai.com/column/images/sidebar-banner.png",
+          url: post.thumbnail
+            ? `https://taskul-ai.com${post.thumbnail}`
+            : "https://taskul-ai.com/column/images/sidebar-banner.png",
           width: 1200,
           height: 630,
           alt: post.title,
@@ -51,6 +53,11 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [
+        post.thumbnail
+          ? `https://taskul-ai.com${post.thumbnail}`
+          : "https://taskul-ai.com/column/images/sidebar-banner.png",
+      ],
     },
   };
 }
