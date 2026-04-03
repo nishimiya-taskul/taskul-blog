@@ -1,0 +1,93 @@
+# TASKUL Blog -> taskul-lp デプロイ自動化
+#
+# ブログをビルドして taskul-lp リポジトリの /column/ ディレクトリにデプロイし、
+# PRを作成して自動マージする。
+#
+# 必要なシークレット:
+#   REPO_TOKEN - GitHub Personal Access Token (classic)
+#     必要な権限: repo (Full control of private repositories)
+#     設定場所: https://github.com/nishimiya-taskul/taskul-blog/settings/secrets/actions
+#     PAT作成: https://github.com/settings/tokens/new
+#
+# 注意: peter-evans/create-pull-request の auto-merge には
+# taskul-lp リポジトリで "Allow auto-merge" が有効になっている必要がある。
+# 設定場所: https://github.com/nishimiya-taskul/taskul-lp/settings
+# (General > Pull Requests > Allow auto-merge)
+
+name: Deploy Blog to taskul-lp
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout taskul-blog
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build blog
+        run: npm run build
+
+      - name: Checkout taskul-lp
+        uses: actions/checkout@v4
+        with:
+          repository: nishimiya-taskul/taskul-lp
+          token: ${{ secrets.REPO_TOKEN }}
+          path: taskul-lp
+
+      - name: Update column directory
+        run: |
+          # 古い column/ を削除
+          rm -rf taskul-lp/column
+
+          # out/ を column/ にコピー
+          cp -r out taskul-lp/column
+
+          # _next ディレクトリが正しくコピーされていることを確認
+          # (out/_next は out/ の中にあるので cp -r で column/_next として入る)
+          ls -la taskul-lp/column/_next || echo "WARNING: _next directory not found"
+
+          # sitemap.xml をルートにコピー
+          cp out/sitemap.xml taskul-lp/sitemap.xml
+
+      - name: Create PR in taskul-lp
+        uses: peter-evans/create-pull-request@v7
+        id: create-pr
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
+          path: taskul-lp
+          commit-message: "chore: update blog column from taskul-blog"
+          branch: auto/blog-deploy
+          delete-branch: true
+          title: "[Auto] ブログ記事更新"
+          body: |
+            taskul-blog の `main` ブランチ更新に伴い、`/column/` ディレクトリを自動更新しました。
+
+            - Source commit: ${{ github.sha }}
+            - Triggered by: ${{ github.event.head_commit.message }}
+
+      - name: Auto-merge PR
+        if: steps.create-pr.outputs.pull-request-number
+        run: |
+          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} \
+            --repo nishimiya-taskul/taskul-lp \
+            --squash \
+            --auto \
+            --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}

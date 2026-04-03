@@ -7,6 +7,14 @@ interface SidebarProps {
   categories?: string[];
 }
 
+const CATEGORY_TO_SLUG: Record<string, string> = {
+  "タスク管理": "task-management",
+  "案件管理": "project-management",
+  "フリーランス": "freelance",
+  "ツール比較": "tool-comparison",
+  "働き方": "workstyle",
+};
+
 const CATEGORIES = [
   "タスク管理",
   "案件管理",
@@ -21,12 +29,12 @@ export default function Sidebar({
   categories = CATEGORIES,
 }: SidebarProps) {
   return (
-    <aside className="w-[340px] shrink-0 flex flex-col gap-14">
+    <aside className="w-full lg:w-[340px] shrink-0 flex flex-col gap-14">
       {/* CTA Banner */}
-      <Link href="/#register" className="block w-[340px] shrink-0">
+      <Link href="https://app.taskul-ai.com/login?from=blog" className="block w-full lg:w-[340px] shrink-0">
         <img
-          src="/images/sidebar-banner.png"
-          alt="TASKUL - 今、先行登録した人限定！7,980円の最上プランを1.5ヶ月間無料解放"
+          src="/column/images/sidebar-banner.png"
+          alt="TASKUL - 全機能14日間無料"
           width={340}
           height={340}
           className="w-full h-auto rounded-[10px]"
@@ -50,16 +58,20 @@ export default function Sidebar({
                 return (
                   <Link
                     key={post.slug}
-                    href={`/column/${post.slug}`}
+                    href={`/${post.slug}`}
                     className="flex flex-col gap-[18px]"
                   >
-                    <div className="relative bg-white rounded-[10px] h-[191px] w-full flex items-center justify-center">
-                      <div className="flex items-center gap-1">
-                        <div className="border-[4px] border-green rounded-[4px] w-6 h-6" />
-                        <span className="font-black text-[30px] tracking-[1.5px] text-black font-['DM_Sans']">
-                          TASKUL
-                        </span>
-                      </div>
+                    <div className="relative bg-white rounded-[10px] h-[191px] w-full overflow-hidden flex items-center justify-center">
+                      {post.thumbnail ? (
+                        <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="flex items-center gap-1">
+                          <div className="border-[4px] border-green rounded-[4px] w-6 h-6" />
+                          <span className="font-black text-[30px] tracking-[1.5px] text-black font-['DM_Sans']">
+                            TASKUL
+                          </span>
+                        </div>
+                      )}
                       <div
                         className={`absolute top-0 left-0 ${rankColors[i]} rounded-tl-[5px] rounded-br-[5px] w-[46px] h-[46px] flex items-center justify-center`}
                       >
@@ -77,16 +89,20 @@ export default function Sidebar({
               return (
                 <Link
                   key={post.slug}
-                  href={`/column/${post.slug}`}
+                  href={`/${post.slug}`}
                   className="flex gap-2.5"
                 >
-                  <div className="relative bg-white rounded-[5px] w-[180px] h-[101px] shrink-0 flex items-center justify-center">
-                    <div className="flex items-center gap-1">
-                      <div className="border-[2.7px] border-green rounded-[2.7px] w-4 h-4" />
-                      <span className="font-black text-[20px] tracking-[1px] text-black font-['DM_Sans']">
-                        TASKUL
-                      </span>
-                    </div>
+                  <div className="relative bg-white rounded-[5px] w-[180px] h-[101px] shrink-0 overflow-hidden flex items-center justify-center">
+                    {post.thumbnail ? (
+                      <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="flex items-center gap-1">
+                        <div className="border-[2.7px] border-green rounded-[2.7px] w-4 h-4" />
+                        <span className="font-black text-[20px] tracking-[1px] text-black font-['DM_Sans']">
+                          TASKUL
+                        </span>
+                      </div>
+                    )}
                     <div
                       className={`absolute top-0 left-0 ${rankColors[i]} rounded-tl-[2.6px] rounded-br-[2.6px] w-6 h-6 flex items-center justify-center`}
                     >
@@ -112,7 +128,10 @@ export default function Sidebar({
           {categories.map((cat) => (
             <div key={cat}>
               <div className="h-px bg-slightly-gray w-full" />
-              <div className="flex items-center justify-between px-2.5 py-3">
+              <Link
+                href={`/category/${CATEGORY_TO_SLUG[cat] || encodeURIComponent(cat)}`}
+                className="flex items-center justify-between px-2.5 py-3 hover:bg-bg transition-colors rounded"
+              >
                 <span className="text-base font-semibold text-main-black tracking-[-0.32px]">
                   {cat}
                 </span>
@@ -125,7 +144,7 @@ export default function Sidebar({
                 >
                   <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />
                 </svg>
-              </div>
+              </Link>
             </div>
           ))}
           <div className="h-px bg-slightly-gray w-full" />

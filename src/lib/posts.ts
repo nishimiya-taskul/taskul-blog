@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -19,6 +20,7 @@ export interface PostMeta {
     role: string;
     bio: string;
   };
+  faq?: { question: string; answer: string }[];
 }
 
 export interface Post extends PostMeta {
@@ -60,6 +62,7 @@ export function getPostBySlug(slug: string): Post {
   }
 
   const processedContent = remark()
+    .use(remarkGfm)
     .use(html, { sanitize: false })
     .processSync(content);
 
@@ -87,6 +90,7 @@ export function getPostBySlug(slug: string): Post {
       role: "ライター",
       bio: "フリーランス・クリエイター向けのタスク管理・業務効率化に関する情報を発信しています。",
     },
+    faq: data.faq || undefined,
     contentHtml: htmlContent,
     headings,
   };
@@ -112,6 +116,7 @@ export function getAllPosts(): PostMeta[] {
           role: "ライター",
           bio: "",
         },
+        faq: data.faq || undefined,
       };
     })
     .sort((a, b) => (a.date > b.date ? -1 : 1));

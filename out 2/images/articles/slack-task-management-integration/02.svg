@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" font-family="'Helvetica Neue', 'Noto Sans JP', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="320" rx="12" fill="#f8f9fb"/>
+  <!-- Slack -->
+  <rect x="40" y="80" width="180" height="160" rx="12" fill="#fff" filter="url(#shadow)"/>
+  <rect x="40" y="80" width="180" height="6" rx="3" fill="#4A154B"/>
+  <text x="130" y="145" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">Slack</text>
+  <text x="130" y="170" text-anchor="middle" font-size="11" fill="#666">チャット・やり取り</text>
+  <text x="130" y="190" text-anchor="middle" font-size="11" fill="#666">ファイル共有</text>
+  <text x="130" y="210" text-anchor="middle" font-size="11" fill="#666">通知の受信</text>
+  <!-- Arrow 1 -->
+  <path d="M230 160 L310 120" stroke="#15cf78" stroke-width="2.5" fill="none" marker-end="url(#arrowG)"/>
+  <text x="270" y="125" text-anchor="middle" font-size="10" fill="#15cf78" font-weight="600">タスク作成</text>
+  <!-- Arrow 2 -->
+  <path d="M230 160 L310 160" stroke="#15cf78" stroke-width="2.5" fill="none" marker-end="url(#arrowG)"/>
+  <text x="270" y="155" text-anchor="middle" font-size="10" fill="#15cf78" font-weight="600">進捗確認</text>
+  <!-- Arrow 3 -->
+  <path d="M230 160 L310 200" stroke="#15cf78" stroke-width="2.5" fill="none" marker-end="url(#arrowG)"/>
+  <text x="270" y="210" text-anchor="middle" font-size="10" fill="#15cf78" font-weight="600">通知集約</text>
+  <defs>
+    <marker id="arrowG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#15cf78"/>
+    </marker>
+  </defs>
+  <!-- Task Tool -->
+  <rect x="320" y="80" width="200" height="160" rx="12" fill="#fff" filter="url(#shadow)"/>
+  <rect x="320" y="80" width="200" height="6" rx="3" fill="#15cf78"/>
+  <text x="420" y="145" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">タスク管理ツール</text>
+  <text x="420" y="170" text-anchor="middle" font-size="11" fill="#666">案件ごとに整理</text>
+  <text x="420" y="190" text-anchor="middle" font-size="11" fill="#666">期日・優先度で管理</text>
+  <text x="420" y="210" text-anchor="middle" font-size="11" fill="#666">進捗を可視化</text>
+  <!-- Result -->
+  <path d="M530 160 L580 160" stroke="#1a1a2e" stroke-width="2" fill="none" marker-end="url(#arrowB)"/>
+  <defs>
+    <marker id="arrowB" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1a1a2e"/>
+    </marker>
+  </defs>
+  <rect x="590" y="80" width="170" height="160" rx="12" fill="#15cf78" filter="url(#shadow)"/>
+  <text x="675" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">効率化の効果</text>
+  <text x="675" y="168" text-anchor="middle" font-size="11" fill="#fff">✓ 登録漏れゼロ</text>
+  <text x="675" y="190" text-anchor="middle" font-size="11" fill="#fff">✓ 確認コスト削減</text>
+  <text x="675" y="212" text-anchor="middle" font-size="11" fill="#fff">✓ 画面切替不要</text>
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">Slack × タスク管理ツール連携のフロー</text>
+</svg>

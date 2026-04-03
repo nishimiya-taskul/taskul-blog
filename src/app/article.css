@@ -1,3 +1,98 @@
+/* ============================
+   Table of Contents
+   ============================ */
+.toc {
+  background: white;
+  border-radius: 10px;
+  padding: 32px 32px 24px;
+  margin: 32px 0 48px;
+  border: 1px solid #ebeef5;
+}
+
+.toc-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #15152b;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #15cf78;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.toc-item a {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f2f5;
+  transition: background 0.15s ease;
+}
+
+.toc-item:last-child a {
+  border-bottom: none;
+}
+
+.toc-item a:hover {
+  background: #f8faff;
+  margin: 0 -16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+/* H2 level */
+.toc-h2 a {
+  font-weight: 600;
+}
+
+.toc-number {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #15cf78;
+  min-width: 24px;
+}
+
+.toc-h2 .toc-text {
+  font-size: 15px;
+  color: #15152b;
+  line-height: 1.6;
+}
+
+/* H3 level */
+.toc-h3 a {
+  padding-left: 36px;
+}
+
+.toc-dot {
+  width: 6px;
+  height: 6px;
+  background: #c0c8d8;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  top: 1px;
+}
+
+.toc-h3 .toc-text {
+  font-size: 14px;
+  color: #5a6478;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ============================
+   Article Body Styles
+   ============================ */
+
 /* Article Body Styles - Based on Figma Design */
 
 .article-body {
@@ -363,4 +458,96 @@
   font-size: 15px;
   line-height: 1.7;
   font-weight: 500;
+}
+
+/* ============================
+   SP Responsive (max-width: 768px)
+   ============================ */
+@media (max-width: 768px) {
+  .article-body h2 {
+    font-size: 24px;
+    margin-top: 56px;
+  }
+  .article-body h3 {
+    font-size: 20px;
+    margin-top: 36px;
+  }
+  .article-body h4 {
+    font-size: 18px;
+    margin-top: 28px;
+  }
+  .article-body h5 {
+    font-size: 18px;
+  }
+  .article-body h6 {
+    font-size: 16px;
+  }
+  .article-body table {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+  }
+  .article-body thead th,
+  .article-body tbody td {
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+  .chat-block {
+    padding: 20px 16px;
+  }
+  .chat-ai-row {
+    max-width: 100%;
+  }
+  .toc {
+    padding: 24px 20px 18px;
+  }
+  .toc-title {
+    font-size: 16px;
+  }
+  .toc-h2 .toc-text {
+    font-size: 14px;
+  }
+  .toc-h3 .toc-text {
+    font-size: 13px;
+  }
+}
+
+/* ============================
+   Hover Animations
+   ============================ */
+
+/* Links */
+.article-body a {
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.article-body a:hover {
+  opacity: 0.75;
+}
+
+/* TOC items */
+.toc-item a {
+  transition: all 0.2s ease;
+}
+.toc-item a:hover {
+  background: #f0f3f8;
+  margin: 0 -16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.toc-item a:hover .toc-number {
+  transform: scale(1.1);
+}
+.toc-item a:hover .toc-text {
+  color: #15cf78;
+}
+
+/* Chat block - no hidden state for static HTML */
+
+/* Image placeholder hover */
+.image-placeholder {
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.image-placeholder:hover {
+  border-color: #15cf78;
+  background: #f5faf8;
 }

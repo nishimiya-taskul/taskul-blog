@@ -10,6 +10,41 @@
 
 ---
 
+## デプロイ構成（絶対に覚えること）
+
+| Vercelプロジェクト | ドメイン | リポジトリ | ローカルパス |
+|---|---|---|---|
+| **taskul-lp** | **taskul-ai.com** | nishimiya-taskul/taskul-lp | `~/Desktop/Github/taskul-lp/` |
+| taskul | app.taskul-ai.com | nishimiya-taskul/taskul | `~/Desktop/Github/taskul/` |
+| taskul-blog | taskul-blog.vercel.app | nishimiya-taskul/taskul-blog | `~/Desktop/Github/taskul-blog/` |
+
+### ブログ記事の公開フロー（この手順を厳守すること）
+
+```
+Step 1: taskul-blog で記事を書く・テンプレートを修正する
+  → ~/Desktop/Github/taskul-blog/
+
+Step 2: ビルドする
+  → cd ~/Desktop/Github/taskul-blog && npm run build
+
+Step 3: ビルド出力を taskul-lp にコピーする
+  → rm -rf ~/Desktop/Github/taskul-lp/column
+  → cp -r ~/Desktop/Github/taskul-blog/out/column ~/Desktop/Github/taskul-lp/column
+  → cp -r ~/Desktop/Github/taskul-blog/out/_next ~/Desktop/Github/taskul-lp/column/_next
+
+Step 4: taskul-lp にコミット & push & PR作成 & マージ
+  → ~/Desktop/Github/taskul-lp/ でgit操作
+  → マージ → Vercelが自動デプロイ → taskul-ai.com/column/ に反映
+```
+
+### 絶対にやってはいけないこと
+- `taskul`（アプリ）リポジトリにブログ関連の変更を入れる
+- Vercelのrewritesで外部プロジェクトにプロキシしようとする
+- 「とりあえずマージして確認」を繰り返す（1デプロイ = コスト）
+- デプロイ先を確認せずにPRをマージする
+
+---
+
 ## 記事制作フロー（必ずこの順番で実行する）
 
 ### Phase 1: リサーチ（記事を書く前に必ずやる）
