@@ -53,7 +53,7 @@ writer:
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">口頭で金額を伝えてそのまま作業を始めてしまうことが多いです……。見積書って本当に必要ですか？</div>
@@ -61,7 +61,7 @@ writer:
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">口頭だけの受注はトラブルの原因になりやすいです。見積書を1枚出すだけで、作業範囲・金額・修正回数が明確になり、追加作業の無料対応を防げます。TASKULなら依頼文を貼るだけで見積書が自動生成されるので、手間はほとんどかかりません。</div>
@@ -165,7 +165,7 @@ Web制作フリーランスの人日単価相場は以下のとおりです。
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">Webエンジニア</span>
 <div class="chat-bubble">案件ごとに工数がバラバラで、毎回見積もりに30分以上かかります。もっと早くできないですか？</div>
@@ -173,7 +173,7 @@ Web制作フリーランスの人日単価相場は以下のとおりです。
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">TASKULのAI見積書生成なら、依頼文を貼り付けるだけで工数・単価・合計金額を含む見積書が約30秒で完成します。3000件以上のWeb制作データから適正単価を提案するので、安売りも防げます。</div>
