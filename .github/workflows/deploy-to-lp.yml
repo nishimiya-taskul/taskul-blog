@@ -86,8 +86,7 @@ jobs:
         run: |
           gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} \
             --repo nishimiya-taskul/taskul-lp \
-            --squash \
-            --auto \
+            --merge \
             --delete-branch
         env:
           GH_TOKEN: ${{ secrets.REPO_TOKEN }}
