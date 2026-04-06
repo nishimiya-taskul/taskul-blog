@@ -185,9 +185,6 @@ Notionが悪いツールなのではありません。**タスク管理には高
 
 もし「Notionのタスク管理がめんどくさい」と少しでも感じているなら、それはツールを変えるサインです。設定ゼロ・コピペだけで始められるTASKULを、まずは無料で試してみてください。
 
-<div class="cta-card">
-<h3>開いて2秒で操れる。</h3>
-<p>全てのフリーランス・クリエイターのための<br>タスク管理AIツール「TASKUL（タスクル）」</p>
-<a href="https://app.taskul-ai.com/register" class="cta-btn">今すぐ14日間無料で試す →</a>
-<div class="cta-logo"><strong>TASKUL</strong> タスクをシンプルに</div>
-</div>
+<a href="https://app.taskul-ai.com/register" class="cta-banner">
+<img src="/column/images/cta-banner.png" alt="TASKUL - フリーランス向けAIタスク管理ツール 14日間無料">
+</a>
