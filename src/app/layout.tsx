@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: {
     default: "コラム | TASKUL - フリーランス専用AIタスク管理",
-    template: "%s | TASKUL コラム",
+    template: "%s | TASKUL",
   },
   description:
     "フリーランス・クリエイターのためのタスク管理・案件管理ノウハウをお届け。TASKUL編集部が現場目線で解説します。",
