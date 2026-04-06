@@ -197,6 +197,8 @@ Trelloはカンバン方式のタスク管理ツールです。
 
 ### TASKUL：フリーランス専用AIで選ぶなら
 
+![TASKULのAIプロジェクト作成画面](/column/images/taskul-screenshots/ai-project-create.png)
+
 ![TASKULのダッシュボード画面 - 今日のタスクと今週の納期が一目でわかる](/column/images/articles/freelance-task-management/04.jpg)
 
 TASKULはフリーランス・クリエイター専用に作られたAIタスク管理ツールです。
@@ -216,6 +218,8 @@ TASKULはフリーランス・クリエイター専用に作られたAIタスク
 <!-- 画像: 朝のルーティンでタスクを確認している様子のイメージ、またはチェックリスト風の図解 -->
 
 ツールを選んだだけでは、タスク管理は続きません。以下の3つのコツを実践してください。
+
+![TASKULのプロジェクト追加モーダル](/column/images/taskul-screenshots/project-add-modal.png)
 
 ### コツ1：毎朝5分だけ「今日やること」を確認する
 
@@ -248,3 +252,10 @@ TASKULはフリーランス・クリエイター専用に作られたAIタスク
 - 完璧な管理を目指さず「抜け漏れゼロ」を目標にする
 
 もし「いろいろ試したけど続かなかった」という方は、フリーランス専用に設計されたTASKULを試してみてください。依頼を貼るだけでAIが自動タスク化するので、**管理に使う時間を限りなくゼロに**できます。
+
+<div class="cta-card">
+<h3>開いて2秒で操れる。</h3>
+<p>全てのフリーランス・クリエイターのための<br>タスク管理AIツール「TASKUL（タスクル）」</p>
+<a href="https://app.taskul-ai.com/register" class="cta-btn">今すぐ14日間無料で試す →</a>
+<div class="cta-logo"><strong>TASKUL</strong> タスクをシンプルに</div>
+</div>
