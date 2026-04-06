@@ -22,7 +22,7 @@ const posts = fs
     const { data } = matter(content);
     const slug = f.replace(/\.md$/, "");
     return {
-      loc: `/column/${slug}`,
+      loc: `/column/${slug}/`,
       lastmod: data.date ? data.date.replace(/\//g, "-") : new Date().toISOString().split("T")[0],
       changefreq: "weekly",
       priority: "0.9",
