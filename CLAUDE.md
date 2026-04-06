@@ -21,25 +21,17 @@
 ### ブログ記事の公開フロー（この手順を厳守すること）
 
 ```
-Step 1: taskul-blog で記事を書く・テンプレートを修正する
-  → ~/Desktop/Github/taskul-blog/
+Step 1: taskul-blog で記事を書く
+  → ~/Desktop/Github/taskul-blog/posts/ に記事Markdownを作成
 
-Step 2: ビルドする
-  → cd ~/Desktop/Github/taskul-blog && npm run build
-
-Step 3: ビルド出力を taskul-lp にコピーする
-  → rm -rf ~/Desktop/Github/taskul-lp/column
-  → cp -r ~/Desktop/Github/taskul-blog/out/column ~/Desktop/Github/taskul-lp/column
-  → cp -r ~/Desktop/Github/taskul-blog/out/_next ~/Desktop/Github/taskul-lp/column/_next
-
-Step 4: taskul-lp にコミット & push & PR作成 & マージ
-  → ~/Desktop/Github/taskul-lp/ でgit操作
-  → マージ → Vercelが自動デプロイ → taskul-ai.com/column/ に反映
+Step 2: taskul-blog でブランチ作成 → コミット → push → PR作成 → マージ
+  → マージ → Vercelが自動ビルド＆デプロイ → taskul-ai.com/column/ に反映
 ```
+
+※ ローカルビルドやtaskul-lpへのコピーは不要。Vercelが自動でやる。
 
 ### 絶対にやってはいけないこと
 - `taskul`（アプリ）リポジトリにブログ関連の変更を入れる
-- Vercelのrewritesで外部プロジェクトにプロキシしようとする
 - 「とりあえずマージして確認」を繰り返す（1デプロイ = コスト）
 - デプロイ先を確認せずにPRをマージする
 
@@ -274,17 +266,20 @@ writer:
 - `![alt文]` にはKWを含む説明文を入れる
 - **HTMLコメントで「どんな画像が入るべきか」を必ず書く**（後から画像を用意する人への指示）
 - 1記事あたり4〜6枚が目安
+- **縦長（ポートレート）画像は禁止** — 必ず横長（ランドスケープ）を使う
+- Pexels APIでは `orientation=landscape` を必ず指定する
 - ダミー画像は空の画像パスでOK（ファイルがなくてもビルドは通る）
 
 ### 画像の配置場所
-- 記事内画像: `public/images/articles/{記事slug}/01.png, 02.png, ...`
+- 記事内画像: `public/images/articles/{記事slug}/01.jpg, 02.jpg, ...`
 - サムネイル: `public/images/articles/{記事slug}/thumbnail.png`
+- **TASKULスクショ元データ: `~/Desktop/taskulスクショ/`**（必ずここから取得。リポジトリ内の古いスクショを使わない）
 
-### 画像ファイルの差し替えフロー
-1. Claudeが記事を書く → ダミー画像パス + コメントで指示を入れる
-2. ユーザーが画像を用意する（撮影/作成/スクショ）or Claudeに渡す
-3. Claudeが `public/images/articles/{slug}/` に配置
-4. alt属性を最終調整
+### 画像ファイルの取得・配置フロー
+1. **Pexels API**でイメージ写真を取得し `public/images/articles/{slug}/01.jpg` 等に保存
+2. **TASKULスクショ**は `~/Desktop/taskulスクショ/` から適切な画像を選び `public/images/articles/{slug}/` にコピー
+3. 記事Markdown内で画像パスとalt属性を設定
+4. ダミー画像（コメント付き未設定パス）を残さない — 必ず実画像を入れて公開する
 
 ---
 
