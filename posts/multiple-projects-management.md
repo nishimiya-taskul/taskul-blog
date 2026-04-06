@@ -137,6 +137,8 @@ writer:
 ![案件管理ツールの活用イメージ](/column/images/articles/multiple-projects-management/03.jpg)
 <!-- 画像: Googleカレンダーのブロック管理例 or スプレッドシートの案件管理表のスクショ -->
 
+![TASKULのカレンダー月表示画面](/column/images/taskul-screenshots/calendar-month.png)
+
 ### Googleカレンダーで「ブロック管理」
 
 各案件の作業時間をカレンダーにブロックとして登録する方法です。
@@ -169,6 +171,8 @@ writer:
 **デメリット**: 更新が手動、リマインドがない
 
 ### TASKUL（AIで自動管理）
+
+![TASKULのクライアント別プロジェクト一覧画面](/column/images/taskul-screenshots/client-projects.png)
 
 ![TASKULのダッシュボード - 複数案件のタスクと納期を一元管理](/column/images/articles/multiple-projects-management/04.jpg)
 
@@ -227,3 +231,10 @@ TASKULはフリーランス専用のAIタスク管理ツールです。
 これらの仕組みが整えば、**案件を増やしても破綻しない**体制ができます。
 
 「最近ちょっとキャパオーバー気味かも」と感じているなら、今日から仕組み化を始めてください。設定不要・コピペだけで始められるTASKULなら、今日中に案件管理の仕組みが手に入ります。
+
+<div class="cta-card">
+<h3>開いて2秒で操れる。</h3>
+<p>全てのフリーランス・クリエイターのための<br>タスク管理AIツール「TASKUL（タスクル）」</p>
+<a href="https://app.taskul-ai.com/register" class="cta-btn">今すぐ14日間無料で試す →</a>
+<div class="cta-logo"><strong>TASKUL</strong> タスクをシンプルに</div>
+</div>
