@@ -246,27 +246,16 @@ export default async function ArticlePage({
             )}
 
             {/* CTA Banner */}
-            <div className="flex flex-col gap-[23px]">
-              <p className="text-base font-medium text-sub-gray text-center">
-                ＼ 全機能14日間無料でお試しいただけます ／
-              </p>
-              <div className="relative bg-white border-4 border-green rounded-[10px] h-auto md:h-[300px] shadow-[0_4px_24px_rgba(0,0,0,0.1)] overflow-hidden">
-                <div className="relative md:absolute md:top-1/2 md:-translate-y-1/2 p-5 md:left-[44px] flex flex-col gap-4">
-                  <h3 className="text-[15px] md:text-[34px] font-bold text-main-black leading-[1.3] tracking-[0.3px] md:tracking-[0.68px]">
-                    タスクをシンプルに。
-                  </h3>
-                  <p className="text-[7px] md:text-base text-[#161616] md:w-[432px] leading-[1.6]">
-                    フリーランスのためのAIタスク管理。開いて2秒で操れる、依頼貼るだけで自動タスク化。
-                  </p>
-                  <a
-                    href="https://app.taskul-ai.com/login?from=blog"
-                    className="bg-green text-white text-[8px] md:text-[17px] font-bold px-4 md:px-8 py-2 md:py-3 rounded-full w-[122px] md:w-[272px] h-[22px] md:h-[50px] flex items-center justify-center tracking-[0.3px] md:tracking-[0.68px]"
-                  >
-                    今すぐ試してみる
-                  </a>
-                </div>
-              </div>
-            </div>
+            <a
+              href="https://app.taskul-ai.com/register"
+              className="block rounded-[10px] overflow-hidden transition-transform hover:translate-y-[-2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
+            >
+              <img
+                src="/column/images/cta-banner.png"
+                alt="TASKUL - フリーランス向けAIタスク管理ツール 14日間無料"
+                className="w-full h-auto"
+              />
+            </a>
 
             {/* Related Posts */}
             {relatedPosts.length > 0 && (
