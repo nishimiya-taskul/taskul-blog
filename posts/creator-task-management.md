@@ -264,9 +264,6 @@ AIに相談しながらタスクの優先度や進め方のアドバイスも受
 
 まずは今抱えている全タスクを書き出すことから始めてみてください。それだけでも、頭の中のモヤモヤが整理されるはずです。
 
-<div class="cta-card">
-<h3>開いて2秒で操れる。</h3>
-<p>全てのフリーランス・クリエイターのための<br>タスク管理AIツール「TASKUL（タスクル）」</p>
-<a href="https://app.taskul-ai.com/register" class="cta-btn">今すぐ14日間無料で試す →</a>
-<div class="cta-logo"><strong>TASKUL</strong> タスクをシンプルに</div>
-</div>
+<a href="https://app.taskul-ai.com/register" class="cta-banner">
+<img src="/column/images/cta-banner.png" alt="TASKUL - フリーランス向けAIタスク管理ツール 14日間無料">
+</a>
