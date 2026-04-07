@@ -104,7 +104,7 @@ export default async function ArticlePage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "TOP", item: "https://taskul-ai.com/" },
+      { "@type": "ListItem", position: 1, name: "TASKUL", item: "https://taskul-ai.com/" },
       { "@type": "ListItem", position: 2, name: "コラム", item: "https://taskul-ai.com/column/" },
       { "@type": "ListItem", position: 3, name: post.category, item: `https://taskul-ai.com/column/category/${{"タスク管理":"task-management","案件管理":"project-management","フリーランス":"freelance","ツール比較":"tool-comparison","働き方":"workstyle"}[post.category] || encodeURIComponent(post.category)}` },
       { "@type": "ListItem", position: 4, name: post.title },
@@ -127,7 +127,7 @@ export default async function ArticlePage({
         <div className="max-w-[1210px] mx-auto px-4 mb-4 md:mb-10">
           <div className="flex items-center gap-[11px] text-[13px] md:text-base text-gray">
             <a href="https://taskul-ai.com/" className="font-['DM_Sans'] hover:text-green">
-              TOP
+              TASKUL
             </a>
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
               <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />
