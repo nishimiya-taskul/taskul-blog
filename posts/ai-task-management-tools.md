@@ -22,7 +22,6 @@ writer:
   bio: "フリーランス・クリエイター向けのタスク管理ノウハウを発信しています。"
 ---
 
-![AIタスク管理ツールの自動化を解説するイメージ](/column/images/articles/ai-task-management-tools/01.jpg)
 
 ## AIタスク管理ツール、結局なにが自動化できるのか
 
@@ -32,7 +31,6 @@ writer:
 
 ## AIで自動化できること・できないこと
 
-![AIタスク管理で自動化できること・できないことの比較](/column/images/articles/ai-task-management-tools/02.jpg)
 
 ### 自動化できること
 
@@ -78,7 +76,6 @@ writer:
 
 ## AIタスク管理ツール5選｜比較表
 
-![AIタスク管理ツール5選の比較表](/column/images/articles/ai-task-management-tools/03.jpg)
 
 | ツール | AI機能 | 無料プラン | 特徴 |
 |--------|--------|-----------|------|
@@ -148,6 +145,8 @@ Asana Intelligenceはチームでのプロジェクト管理に強いAIです。
 </div>
 
 ### TASKUL — フリーランスの案件管理に特化したAI
+
+![TASKULの案件管理画面](/column/images/articles/ai-task-management-tools/04.png)
 
 TASKULのAI機能は、フリーランスの案件管理に特化しています。案件の情報を入力すると、AIがタスクを自動分解し、優先度とスケジュールを提案します。
 
