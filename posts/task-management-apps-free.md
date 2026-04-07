@@ -20,6 +20,9 @@ writer:
   bio: "フリーランス・クリエイター向けのタスク管理ノウハウを発信しています。"
 ---
 
+![無料で使えるタスク管理アプリを比較するイメージ](/column/images/articles/task-management-apps-free/01.jpg)
+<!-- 画像未設定: スマホとPCでタスク管理アプリを操作している様子のイメージ -->
+
 ## 「タスク管理アプリ 無料」で検索しているあなたへ
 
 タスク管理アプリを無料で使いたい。でも無料のアプリは数が多すぎて、どれを選べばいいか分からない。
@@ -29,6 +32,9 @@ writer:
 この記事では、**完全無料で使えるもの**と**無料プランが実用的なもの**を7つに厳選しました。個人のタスク管理に必要な機能と選び方を、比較表つきで解説します。
 
 ## 無料のタスク管理アプリを選ぶ3つのポイント
+
+![無料タスク管理アプリの選び方のポイント](/column/images/articles/task-management-apps-free/02.jpg)
+<!-- 画像未設定: 「無料の範囲」「入力の手軽さ」「マルチデバイス対応」の3ポイントを示す図解 -->
 
 ### ポイント1：無料プランで「何件まで管理できるか」を確認する
 
@@ -68,6 +74,9 @@ writer:
 </div>
 
 ## 無料で使えるタスク管理アプリ7選｜比較表
+
+![無料タスク管理アプリ7選の比較表](/column/images/articles/task-management-apps-free/03.jpg)
+<!-- 画像未設定: 7つのアプリの比較表を図解にしたもの -->
 
 | アプリ | 無料の範囲 | 特徴 | 向いている人 |
 |--------|-----------|------|------------|
@@ -191,7 +200,26 @@ AI機能も搭載されており、タスクの優先度提案やスケジュー
 
 1週間毎日開けたアプリは、あなたに合っています。そこから案件管理やチーム共有などの機能を使い始めれば大丈夫です。
 
-フリーランスのタスク管理で悩んでいる方は、[フリーランスのタスク管理術｜案件を抱えすぎて破綻する前に](/column/freelance-task-management)も参考になります。
+フリーランスのタスク管理で悩んでいる方は、[フリーランスのタスク管理術｜案件を抱えすぎて破綻する前に](/column/freelance-task-management)も参考になります。複数案件を同時に回す方法は[複数案件を同時に回すフリーランスの管理術](/column/multiple-projects-management)で解説しています。
+
+<div class="chat-block">
+<div class="chat-human">
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-content">
+<span class="chat-name">Webマーケター</span>
+<div class="chat-bubble">無料で始めて、どのタイミングで有料に切り替えるべきですか？</div>
+</div>
+</div>
+<div class="chat-ai">
+<div class="chat-ai-row">
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-content">
+<span class="chat-name">TASKUL AI</span>
+<div class="chat-bubble">「管理しきれない」と感じた時がベストなタイミングです。無料で不便を感じないなら、そのまま使い続けて問題ありません。</div>
+</div>
+</div>
+</div>
+</div>
 
 ## まとめ
 
@@ -200,3 +228,7 @@ AI機能も搭載されており、タスクの優先度提案やスケジュー
 迷ったらまずGoogle ToDoかTodoistを試してください。案件単位で管理したいフリーランスの方は、[TASKUL](https://app.taskul-ai.com/login?from=blog)のFreeプランも選択肢の一つです。
 
 1週間試して、毎日開けるアプリが見つかれば成功です。
+
+<a href="https://app.taskul-ai.com/register" class="cta-banner">
+<img src="/column/images/cta-banner.png" alt="TASKUL - フリーランス向けAIタスク管理ツール 14日間無料">
+</a>
