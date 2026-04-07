@@ -23,7 +23,6 @@ writer:
 ---
 
 ![案件管理ツールを比較するイメージ](/column/images/articles/project-tracking-tools-comparison/01.jpg)
-<!-- 画像未設定: フリーランスが複数の案件情報を管理している様子のイメージ -->
 
 ## 案件管理、Excelやメモ帳で回していませんか
 
@@ -36,7 +35,6 @@ writer:
 ## 案件管理ツールを選ぶ3つのポイント
 
 ![案件管理ツール選びのポイントを解説](/column/images/articles/project-tracking-tools-comparison/02.jpg)
-<!-- 画像未設定: 「管理項目」「クライアント紐づけ」「モバイル対応」の3ポイントを示す図解 -->
 
 ### ポイント1：案件に必要な管理項目があるか
 
@@ -85,7 +83,6 @@ writer:
 ## 案件管理ツール6選｜比較表
 
 ![案件管理ツール6選の比較表](/column/images/articles/project-tracking-tools-comparison/03.jpg)
-<!-- 画像未設定: 6ツールの比較表を図解にしたもの -->
 
 | ツール | 無料プラン | クライアント管理 | モバイル | 特徴 |
 |--------|-----------|--------------|---------|------|
