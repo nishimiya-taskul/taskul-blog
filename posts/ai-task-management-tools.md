@@ -151,7 +151,7 @@ Asana Intelligenceはチームでのプロジェクト管理に強いAIです。
 
 ![TASKULの案件管理画面](/column/images/articles/ai-task-management-tools/04.png)
 
-TASKULのAI機能は、フリーランスの案件管理に特化しています。案件の情報を入力すると、AIがタスクを自動分解し、優先度とスケジュールを提案します。
+[TASKUL](https://app.taskul-ai.com/login?from=blog)のAI機能は、フリーランスの案件管理に特化しています。案件の情報を入力すると、AIがタスクを自動分解し、優先度とスケジュールを提案します。
 
 複数案件の納期が重なった場合、空き時間を考慮してスケジュールを再調整する機能もあります。**設定や学習コストが低い**のが特徴です。
 
