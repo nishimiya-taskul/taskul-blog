@@ -15,7 +15,7 @@ export default function ColumnListPage() {
         <div className="max-w-[1210px] mx-auto px-4 mb-4 md:mb-10">
           <div className="flex items-center gap-[11px] text-base text-gray">
             <a href="https://taskul-ai.com/" className="font-['DM_Sans'] hover:text-green">
-              TOP
+              TASKUL
             </a>
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
               <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />

@@ -1,13 +1,48 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import { getAllPosts } from "@/lib/posts";
+import "../../article.css";
 
-export function CategoryPageContent({ categoryName }: { categoryName: string }) {
+const CATEGORIES = [
+  "タスク管理",
+  "案件管理",
+  "フリーランス",
+  "ツール比較",
+  "働き方",
+];
+
+export function generateStaticParams() {
+  return CATEGORIES.map((cat) => ({
+    category: encodeURIComponent(cat),
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}): Promise<Metadata> {
+  const { category } = await params;
+  const decoded = decodeURIComponent(category);
+  return {
+    title: `${decoded}の記事一覧`,
+    description: `${decoded}に関するコラム記事一覧。フリーランス・クリエイター向けのノウハウをお届けします。`,
+  };
+}
+
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+  const { category } = await params;
+  const decoded = decodeURIComponent(category);
   const allPosts = getAllPosts();
   const posts = allPosts.filter(
-    (p) => p.tags.includes(categoryName) || p.category === categoryName
+    (p) => p.tags.includes(decoded) || p.category === decoded
   );
 
   return (
@@ -28,7 +63,7 @@ export function CategoryPageContent({ categoryName }: { categoryName: string }) 
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
               <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />
             </svg>
-            <span>{categoryName}</span>
+            <span>{decoded}</span>
           </div>
         </div>
 
@@ -43,7 +78,7 @@ export function CategoryPageContent({ categoryName }: { categoryName: string }) 
                   </span>
                 </div>
                 <h1 className="text-[38px] md:text-[54px] font-bold text-main-black leading-[1.28]">
-                  {categoryName}
+                  {decoded}
                 </h1>
               </div>
 
