@@ -70,7 +70,7 @@ writer:
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">タスク管理ツール入れたけど、結局メモ帳に書き出したほうが早いんですよね……</div>
@@ -78,7 +78,7 @@ writer:
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">メモ帳が楽に感じるのは、ツールの入力コストが高すぎるからです。依頼文をコピペするだけでタスク化できれば、メモ帳より速くなりますよ。</div>
@@ -197,7 +197,7 @@ TASKULはフリーランス・クリエイター向けに設計されたAIタス
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">Webデザイナー</span>
 <div class="chat-bubble">ツールが多すぎて選べません。結局どれを試せばいいですか？</div>
@@ -205,7 +205,7 @@ TASKULはフリーランス・クリエイター向けに設計されたAIタス
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">まずは「今の案件数」で判断しましょう。月3件以下ならTrello、Notionが好きなら Notion、入力の手間を省きたいならTASKULを無料で試してみてください。</div>
@@ -258,7 +258,7 @@ TASKULはフリーランス・クリエイター向けに設計されたAIタス
 
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">先月、納品したのに請求書を出し忘れて1ヶ月入金が遅れました……</div>
@@ -266,7 +266,7 @@ TASKULはフリーランス・クリエイター向けに設計されたAIタス
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">よくある失敗です。案件の「完了」と「請求」をセットで管理するだけで防げます。TASKULなら案件ステータス変更で請求タスクを自動表示しますよ。</div>

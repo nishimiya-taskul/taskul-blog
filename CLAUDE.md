@@ -298,7 +298,7 @@ writer:
 ```html
 <div class="chat-block">
 <div class="chat-human">
-<div class="chat-human-icon"><img src="/images/chat-user.png" alt="ユーザー"></div>
+<div class="chat-human-icon"><img src="/column/images/chat-user.png" alt="ユーザー"></div>
 <div class="chat-human-content">
 <span class="chat-name">フリーランスデザイナー</span>
 <div class="chat-bubble">ユーザーの悩みや質問をここに</div>
@@ -306,7 +306,7 @@ writer:
 </div>
 <div class="chat-ai">
 <div class="chat-ai-row">
-<div class="chat-ai-icon"><img src="/images/chat-taskul.png" alt="TASKUL AI"></div>
+<div class="chat-ai-icon"><img src="/column/images/chat-taskul.png" alt="TASKUL AI"></div>
 <div class="chat-ai-content">
 <span class="chat-name">TASKUL AI</span>
 <div class="chat-bubble">TASKUL AIの回答をここに</div>
