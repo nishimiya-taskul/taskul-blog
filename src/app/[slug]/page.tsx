@@ -138,7 +138,13 @@ export default async function ArticlePage({
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
               <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />
             </svg>
-            <span>{post.category}</span>
+            <Link href={`/category/${{"タスク管理":"task-management","案件管理":"project-management","フリーランス":"freelance","ツール比較":"tool-comparison","働き方":"workstyle"}[post.category] || encodeURIComponent(post.category)}`} className="hover:text-green">
+              {post.category}
+            </Link>
+            <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
+              <path d="M0.5 0.5L3.5 4L0.5 7.5" stroke="currentColor" />
+            </svg>
+            <span className="truncate max-w-[200px] md:max-w-[400px]">{post.title}</span>
           </div>
         </div>
 
