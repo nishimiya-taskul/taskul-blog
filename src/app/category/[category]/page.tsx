@@ -14,6 +14,14 @@ const CATEGORIES = [
   "働き方",
 ];
 
+const CATEGORY_INTRO: Record<string, string> = {
+  "ツール比較": "タスク管理ツールを選ぶなら、「AI自動化機能」「フリーランス向け案件管理」「価格帯」の3軸で比較するのが最も効果的です。Notion・Asana・Todoist・TASKULなど主要ツールを機能・料金・使いやすさの観点から徹底比較し、職種・規模・予算別におすすめを解説します。",
+  "タスク管理": "フリーランス・クリエイターのタスク管理は、案件単位での進捗管理と納期管理が核心です。個人の生産性を最大化するタスク管理術から、複数案件を同時進行するための実践テクニックまで解説します。",
+  "案件管理": "案件管理の最大の課題は、依頼内容・進捗・請求情報の一元化です。受注から納品・請求まで、案件をもれなく管理する方法を実践的に解説します。",
+  "フリーランス": "フリーランスとして安定した収入を得るには、案件管理・時間管理・営業の仕組み化が欠かせません。独立1年目から使える実践的なノウハウをお届けします。",
+  "働き方": "クリエイター・フリーランスが長く活躍し続けるための働き方設計を解説します。時間の使い方・生産性向上・メンタル管理まで、現場目線で解説します。",
+};
+
 export function generateStaticParams() {
   return CATEGORIES.map((cat) => ({
     category: encodeURIComponent(cat),
@@ -30,6 +38,9 @@ export async function generateMetadata({
   return {
     title: `${decoded}の記事一覧`,
     description: `${decoded}に関するコラム記事一覧。フリーランス・クリエイター向けのノウハウをお届けします。`,
+    alternates: {
+      canonical: `https://taskul-ai.com/column/category/${decoded}`,
+    },
   };
 }
 
@@ -80,6 +91,11 @@ export default async function CategoryPage({
                 <h1 className="text-[38px] md:text-[54px] font-bold text-main-black leading-[1.28]">
                   {decoded}
                 </h1>
+                {CATEGORY_INTRO[decoded] && (
+                  <p className="text-[15px] md:text-base text-sub-gray leading-[1.8] max-w-[640px]">
+                    {CATEGORY_INTRO[decoded]}
+                  </p>
+                )}
               </div>
 
               {posts.length === 0 ? (

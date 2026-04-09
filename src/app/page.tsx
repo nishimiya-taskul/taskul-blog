@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import { getAllPosts } from "@/lib/posts";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://taskul-ai.com/column/",
+  },
+};
 
 export default function ColumnListPage() {
   const posts = getAllPosts();
