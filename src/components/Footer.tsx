@@ -3,8 +3,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative bg-white w-full">
-      <div className="max-w-[1440px] mx-auto px-10 md:px-[115px] py-[50px] md:pt-[107px] md:pb-[66px]">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-[139px] pt-[50px] md:pt-[61px] pb-[30px] md:pb-[40px]">
         <div className="flex flex-col md:flex-row md:justify-between gap-[34px]">
+          {/* 左側: ロゴ + CTA */}
           <div className="flex flex-col items-start gap-7">
             <div className="flex flex-col items-center">
               <div className="flex items-center gap-1.5">
@@ -19,33 +20,37 @@ export default function Footer() {
             </div>
             <a
               href="https://app.taskul-ai.com/login?from=blog"
-              className="flex items-center gap-2.5 bg-green text-white text-[15px] font-semibold px-[52px] py-4 rounded-full w-full md:w-auto justify-center"
+              className="flex items-center justify-center bg-green text-white text-[15px] font-semibold px-[52px] py-4 rounded-full w-full md:w-auto hover:opacity-90 transition-opacity"
             >
-              <span className="w-1.5 h-1.5 bg-white rounded-full" />
-              14日間無料で試す
+              まずは無料トライアル
             </a>
           </div>
-          <div className="flex flex-col md:flex-row gap-[18px] md:gap-[200px]">
-            <div className="flex flex-col gap-[18px] text-base font-semibold text-main-black">
-              <a href="https://taskul-ai.com/" className="font-['DM_Sans']">TOP</a>
-              <a href="https://taskul-ai.com/#service">サービス</a>
-              <Link href="/">コラム</Link>
+
+          {/* 右側: 2列のリンクメニュー */}
+          <div className="flex gap-[60px] md:gap-[80px] text-base font-semibold text-main-black">
+            <div className="flex flex-col gap-[18px]">
+              <a href="https://taskul-ai.com/" className="font-['DM_Sans'] hover:opacity-70 transition-opacity">TOP</a>
+              <a href="https://taskul-ai.com/#service" className="hover:opacity-70 transition-opacity">サービス</a>
+              <Link href="/" className="hover:opacity-70 transition-opacity">コラム</Link>
             </div>
-            <div className="flex flex-col gap-[18px] text-base font-semibold text-main-black">
-              <span className="font-['DM_Sans']">FREECOMPANY</span>
-              <a href="https://taskul-ai.com/">運営会社</a>
-              <a href="https://taskul-ai.com/#contact">お問い合わせ</a>
+            <div className="flex flex-col gap-[18px]">
+              <a href="https://kurococreation.com/" target="_blank" rel="noopener noreferrer" className="font-['DM_Sans'] hover:opacity-70 transition-opacity">KUROCO CREATION</a>
+              <a href="https://free-company.co.jp/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">運営会社</a>
+              <a href="https://lin.ee/91VzSXM" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">お問い合わせ</a>
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-[26px] mt-8 md:mt-12 text-[14px] md:text-[15px] text-gray">
-          <a href="https://taskul-ai.com/terms" className="underline">利用規約</a>
-          <a href="https://taskul-ai.com/privacy" className="underline">プライバシーポリシー</a>
-          <a href="https://taskul-ai.com/tokusho" className="underline">特定商取引法に基づく表記</a>
+
+        {/* 中央: 利用規約・プライバシーポリシー */}
+        <div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-[26px] mt-8 md:mt-12 text-[14px] md:text-[15px] text-[#868686]">
+          <a href="https://taskul-ai.com/terms.html" className="underline hover:opacity-70 transition-opacity">利用規約</a>
+          <a href="https://taskul-ai.com/privacy.html" className="underline hover:opacity-70 transition-opacity">プライバシーポリシー</a>
         </div>
       </div>
+
+      {/* 下部の緑バー + コピーライト */}
       <div className="bg-green h-[33px] flex items-center justify-center">
-        <p className="text-white text-sm text-center">
+        <p className="text-white text-sm text-center font-['DM_Sans']">
           2026 &copy; FREECOMPANY All Rights Reserved.
         </p>
       </div>
