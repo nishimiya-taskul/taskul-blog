@@ -86,8 +86,9 @@ export default async function ArticlePage({
     description: post.description,
     datePublished: post.date,
     author: {
-      "@type": "Organization",
+      "@type": "Person",
       name: post.writer.name,
+      description: post.writer.bio,
     },
     publisher: {
       "@type": "Organization",

@@ -89,7 +89,7 @@ Web制作の案件管理テンプレートに必要な項目は、**案件名・
 
 ![案件管理表のイメージ](/column/images/articles/web-production-project-management-template/02.jpg)
 
-### エクセル管理で起きる3つの問題
+### エクセルでの案件管理にはどんな問題がある？
 
 **1. ファイルが分散する**
 
