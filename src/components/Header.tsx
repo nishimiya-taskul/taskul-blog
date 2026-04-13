@@ -12,18 +12,21 @@ export default function Header() {
           タスクをシンプルに
         </span>
       </a>
-      <nav className="hidden md:flex items-center gap-12">
+      <nav className="hidden md:flex items-center gap-10">
         <a href="https://taskul-ai.com/" className="text-main-black text-base font-semibold font-['DM_Sans']">
           TOP
-        </a>
-        <a href="https://taskul-ai.com/#service" className="text-main-black text-base font-semibold">
-          サービス
         </a>
         <Link href="/" className="text-main-black text-base font-semibold">
           コラム
         </Link>
-        <a href="https://taskul-ai.com/#contact" className="text-main-black text-base font-semibold">
+        <a href="https://free-company.co.jp/" target="_blank" rel="noopener noreferrer" className="text-main-black text-base font-semibold">
+          運営会社
+        </a>
+        <a href="https://lin.ee/rSlYN882" target="_blank" rel="noopener noreferrer" className="text-main-black text-base font-semibold">
           お問い合わせ
+        </a>
+        <a href="https://app.taskul-ai.com/login?from=blog" className="bg-green text-white text-sm font-semibold px-5 py-2 rounded-full hover:opacity-90 transition-opacity">
+          14日間無料トライアル
         </a>
       </nav>
     </header>
