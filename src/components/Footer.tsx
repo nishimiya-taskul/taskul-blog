@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex flex-col gap-[18px]">
               <a href="https://kuroco-creation.jp/" target="_blank" rel="noopener noreferrer" className="font-['DM_Sans'] hover:opacity-70 transition-opacity">KUROCO CREATION</a>
               <a href="https://free-company.co.jp/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">運営会社</a>
-              <a href="https://lin.ee/RkS1N6k" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">お問い合わせ</a>
+              <a href="https://lin.ee/rSlYN882" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">お問い合わせ</a>
             </div>
           </div>
         </div>

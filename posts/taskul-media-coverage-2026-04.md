@@ -43,6 +43,20 @@ writer:
 
 記事内では、TASKULの特徴であるAIによる自動タスク生成、見積書作成機能、Web制作工程に特化した設計思想などが紹介されています。
 
+## 掲載メディアのキャプチャ
+
+実際に各メディアで配信された記事の掲載例です。
+
+![TASKULクリエイター向けAIタスク管理ツールのメディア掲載記事キャプチャ1](/column/images/articles/taskul-media-coverage-2026-04/media-01.png)
+
+![TASKULクリエイター向けAIタスク管理ツールのメディア掲載記事キャプチャ2](/column/images/articles/taskul-media-coverage-2026-04/media-02.png)
+
+![TASKULクリエイター向けAIタスク管理ツールのメディア掲載記事キャプチャ3](/column/images/articles/taskul-media-coverage-2026-04/media-03.png)
+
+![TASKULクリエイター向けAIタスク管理ツールのメディア掲載記事キャプチャ4](/column/images/articles/taskul-media-coverage-2026-04/media-04.png)
+
+各記事では「フリーランス・クリエイターのタスク管理を一変させる次世代AIツール」として、TASKULの機能・設計思想が詳しく紹介されています。
+
 ## TASKULとは？
 
 TASKULは、**フリーランス・クリエイターが1人で複数案件を回すための専用AIタスク管理ツール** です。
@@ -89,6 +103,8 @@ TASKULは公式サイトから無料で登録できます。
 
 **取材・お問い合わせについて**
 
-TASKULに関する取材・掲載のご依頼は、公式サイトのお問い合わせフォームよりご連絡ください。プロダクトに関するご質問、開発背景、今後のロードマップなどについて、運営チームより迅速にご回答いたします。
+TASKULに関する取材・掲載のご依頼は、公式LINEよりお気軽にご連絡ください。プロダクトに関するご質問、開発背景、今後のロードマップなどについて、運営チームより迅速にご回答いたします。
+
+**▶︎ 公式LINE: [https://lin.ee/rSlYN882](https://lin.ee/rSlYN882)**
 
 引き続き、TASKULをよろしくお願いいたします。
