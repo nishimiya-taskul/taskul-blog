@@ -111,6 +111,18 @@ export default async function ArticlePage({
     ],
   };
 
+  const howtoJsonLd = post.howto && post.howto.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.title,
+    step: post.howto.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -121,6 +133,12 @@ export default async function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {howtoJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howtoJsonLd) }}
+        />
+      )}
       <Header />
       <main className="pt-[72px] md:pt-[90px] pb-16 md:pb-32 bg-bg min-h-screen">
         {/* Breadcrumb */}
