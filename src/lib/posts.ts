@@ -21,6 +21,7 @@ export interface PostMeta {
     bio: string;
   };
   faq?: { question: string; answer: string }[];
+  howto?: { name: string; text: string }[];
 }
 
 export interface Post extends PostMeta {
@@ -91,6 +92,7 @@ export function getPostBySlug(slug: string): Post {
       bio: "フリーランス・クリエイター向けのタスク管理・業務効率化に関する情報を発信しています。",
     },
     faq: data.faq || undefined,
+    howto: data.howto || undefined,
     contentHtml: htmlContent,
     headings,
   };
@@ -117,6 +119,7 @@ export function getAllPosts(): PostMeta[] {
           bio: "",
         },
         faq: data.faq || undefined,
+        howto: data.howto || undefined,
       };
     })
     .sort((a, b) => (a.date > b.date ? -1 : 1));
