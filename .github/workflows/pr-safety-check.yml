@@ -1,0 +1,51 @@
+name: PR Safety Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-no-deletions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for dangerous changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "## PR Safety Check" >> $GITHUB_STEP_SUMMARY
+
+          # Get list of modified and deleted files
+          CHANGED=$(gh pr diff ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --name-only)
+
+          # Get diff stat to check for deletions and modifications of existing files
+          DIFF_STAT=$(gh pr diff ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --stat)
+
+          echo "### Changed files:" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "$CHANGED" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+          # Check for deleted files
+          DELETED=$(gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files --paginate --jq '.[] | select(.status == "removed") | .filename')
+          if [ -n "$DELETED" ]; then
+            echo "::error::PR deletes existing files. This is not allowed for auto-generated PRs."
+            echo "### BLOCKED: Files being deleted:" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "$DELETED" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+
+          # Check for modified files in protected paths (src/, CLAUDE.md, ops/OPS.md)
+          PROTECTED=$(gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files --paginate --jq '.[] | select(.status == "modified") | .filename' | grep -E '^(src/|CLAUDE\.md|ops/OPS\.md|\.github/)' || true)
+          if [ -n "$PROTECTED" ]; then
+            echo "::error::PR modifies protected files. This is not allowed."
+            echo "### BLOCKED: Protected files being modified:" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "$PROTECTED" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+
+          echo "### Result: PASS" >> $GITHUB_STEP_SUMMARY
+          echo "No deletions or protected file modifications detected."
