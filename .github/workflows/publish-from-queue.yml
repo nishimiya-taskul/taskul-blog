@@ -95,3 +95,10 @@ jobs:
             --admin
         env:
           GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::記事公開ワークフローが失敗しました"
+          # GitHub Actions はデフォルトでリポジトリオーナーにメール通知を送る
+          # Slack通知は後のフェーズで追加

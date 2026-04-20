@@ -90,3 +90,7 @@ jobs:
             --delete-branch
         env:
           GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "::error::ブログデプロイが失敗しました"
