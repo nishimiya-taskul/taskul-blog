@@ -2,7 +2,7 @@
 title: "クリエイターの燃え尽き症候群を防ぐセルフマネジメント術"
 description: "フリーランスクリエイターが燃え尽き症候群に陥る原因と、稼働率の可視化・案件フィルタリング・週次レビューで未然に防ぐ具体的な方法を解説します。"
 thumbnail: "/column/images/articles/creator-burnout-prevention/thumbnail.png"
-date: "2025/01/01"
+date: "2026/04/20"
 category: "働き方"
 tags: ["燃え尽き症候群", "セルフマネジメント", "フリーランス", "クリエイター", "働き方"]
 faq:
