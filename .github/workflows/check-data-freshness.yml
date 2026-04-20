@@ -1,0 +1,71 @@
+# seo-snapshot.json の鮮度を毎朝チェック
+# 9:10 JST (00:10 UTC) に実行（ブリーフィング9:17の前）
+# 古すぎたらexport-to-githubを呼び直す
+
+name: Check Data Freshness
+
+on:
+  schedule:
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check seo-snapshot freshness
+        id: freshness
+        run: |
+          if [ ! -f ops/data/seo-snapshot.json ]; then
+            echo "seo-snapshot.json not found"
+            echo "is_stale=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          EXPORTED_AT=$(python3 -c "
+          import json
+          with open('ops/data/seo-snapshot.json') as f:
+              d = json.load(f)
+          print(d.get('exported_at', ''))
+          ")
+
+          if [ -z "$EXPORTED_AT" ]; then
+            echo "exported_at not found in seo-snapshot.json"
+            echo "is_stale=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Check if older than 26 hours (24h + 2h margin)
+          AGE_SECONDS=$(python3 -c "
+          from datetime import datetime, timezone
+          exported = datetime.fromisoformat('$EXPORTED_AT'.replace('Z', '+00:00'))
+          now = datetime.now(timezone.utc)
+          print(int((now - exported).total_seconds()))
+          ")
+
+          AGE_HOURS=$((AGE_SECONDS / 3600))
+          echo "seo-snapshot.json age: ${AGE_HOURS}h (exported_at: $EXPORTED_AT)"
+
+          if [ "$AGE_HOURS" -gt 26 ]; then
+            echo "Data is stale (${AGE_HOURS}h old)"
+            echo "is_stale=true" >> $GITHUB_OUTPUT
+          else
+            echo "Data is fresh (${AGE_HOURS}h old)"
+            echo "is_stale=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger re-export if stale
+        if: steps.freshness.outputs.is_stale == 'true'
+        run: |
+          echo "Triggering seo-engine export-to-github..."
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://seo-engine-nishimiya-7712s-projects.vercel.app/api/cron/export-to-github")
+
+          if [ "$STATUS" = "200" ]; then
+            echo "Re-export triggered successfully"
+          else
+            echo "::error::Re-export failed with status $STATUS"
+          fi
