@@ -1,0 +1,97 @@
+# キューから記事を1本公開する
+# 毎朝9:43 JST (00:43 UTC) に自動実行
+# AIは使わない。ファイル移動とPR作成だけ。
+
+name: Publish Article from Queue
+
+on:
+  schedule:
+    - cron: '43 0 * * *'  # 9:43 JST
+  workflow_dispatch:  # 手動実行も可能
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
+
+      - name: Check queue
+        id: check
+        run: |
+          # キューにmdファイルがあるか確認
+          QUEUE_FILES=$(ls ops/queue/*.md 2>/dev/null | head -1)
+          if [ -z "$QUEUE_FILES" ]; then
+            echo "Queue is empty. Nothing to publish."
+            echo "has_article=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # アルファベット順で最初のファイルを選択
+          ARTICLE_FILE="$QUEUE_FILES"
+          SLUG=$(basename "$ARTICLE_FILE" .md)
+          TITLE=$(grep '^title:' "$ARTICLE_FILE" | sed 's/title: *"//;s/"$//')
+
+          echo "slug=$SLUG" >> $GITHUB_OUTPUT
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+          echo "file=$ARTICLE_FILE" >> $GITHUB_OUTPUT
+          echo "has_article=true" >> $GITHUB_OUTPUT
+
+          echo "Selected: $SLUG ($TITLE)"
+
+      - name: Publish article
+        if: steps.check.outputs.has_article == 'true'
+        env:
+          SLUG: ${{ steps.check.outputs.slug }}
+          TITLE: ${{ steps.check.outputs.title }}
+        run: |
+          TODAY=$(date -u -d '+9 hours' '+%Y/%m/%d')  # JST
+
+          # 1. frontmatterのdateを今日に更新
+          sed -i "s|^date:.*|date: \"$TODAY\"|" "ops/queue/$SLUG.md"
+
+          # 2. 記事をposts/に移動
+          mv "ops/queue/$SLUG.md" "posts/$SLUG.md"
+
+          # 3. 画像があればpublic/images/articles/に移動
+          if [ -d "ops/queue/images/$SLUG" ]; then
+            mkdir -p "public/images/articles/$SLUG"
+            mv ops/queue/images/$SLUG/* "public/images/articles/$SLUG/"
+            rmdir "ops/queue/images/$SLUG" 2>/dev/null || true
+          fi
+
+          echo "Published: $SLUG"
+          echo "Date set to: $TODAY"
+
+      - name: Create PR
+        if: steps.check.outputs.has_article == 'true'
+        uses: peter-evans/create-pull-request@v7
+        id: create-pr
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
+          commit-message: "記事公開: ${{ steps.check.outputs.title }}"
+          branch: "article/${{ steps.check.outputs.slug }}"
+          delete-branch: true
+          title: "記事公開: ${{ steps.check.outputs.title }}"
+          body: |
+            キューから自動公開
+            - slug: ${{ steps.check.outputs.slug }}
+            - source: ops/queue/
+
+      - name: Auto-merge PR
+        if: steps.create-pr.outputs.pull-request-number
+        run: |
+          # CIチェックを待ってからマージ
+          sleep 15
+          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} \
+            --squash \
+            --delete-branch \
+            --admin
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
