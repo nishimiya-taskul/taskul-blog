@@ -69,3 +69,16 @@ jobs:
           else
             echo "::error::Re-export failed with status $STATUS"
           fi
+
+      - name: Trigger publish if queue has articles
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+        run: |
+          QUEUE_COUNT=$(ls ops/queue/*.md 2>/dev/null | wc -l)
+          if [ "$QUEUE_COUNT" -gt 0 ]; then
+            echo "Queue has $QUEUE_COUNT articles. Triggering publish workflow..."
+            gh workflow run "Publish Article from Queue" --repo ${{ github.repository }}
+            echo "Publish workflow triggered"
+          else
+            echo "Queue is empty. Skipping."
+          fi
