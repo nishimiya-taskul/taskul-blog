@@ -2,7 +2,7 @@
 title: "広告運用のタスク管理術｜施策の抜け漏れを防ぐ方法"
 description: "広告運用でタスクの抜け漏れが起きる構造的原因と、入稿からレポートまでの施策フロー別チェックリスト・複数媒体×複数クライアントの管理術を解説。おすすめツール比較も紹介します。"
 thumbnail: "/column/images/articles/marketer-ad-task-management/thumbnail.png"
-date: "2025/01/01"
+date: "2026/04/21"
 category: "タスク管理"
 tags: ["広告運用", "タスク管理", "抜け漏れ防止", "Webマーケター", "リスティング広告"]
 faq:
