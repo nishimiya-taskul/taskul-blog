@@ -2,7 +2,7 @@
 title: "チームのタスク共有がうまくいかない原因と改善策5選"
 description: "チームでタスク共有がうまくいかない原因を5つに分類し、ツール導入だけでは解決しない本当の理由と、粒度・命名・運用ルールの具体的な改善策を解説します。"
 thumbnail: "/column/images/articles/team-task-sharing-failure/thumbnail.png"
-date: "2025/01/01"
+date: "2026/04/21"
 category: "案件管理"
 tags: ["タスク共有", "チーム管理", "案件管理", "プロジェクト管理"]
 faq:
