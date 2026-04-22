@@ -2,7 +2,7 @@
 title: "動画編集者のタスク管理術｜納期と品質を両立する方法"
 description: "動画編集者が抱えるタスク管理の課題と、納期遅れ・品質低下を防ぐ具体的な方法を解説。工程別テンプレート、複数案件の回し方、おすすめツール比較まで網羅します。"
 thumbnail: "/column/images/articles/video-creator-task-management/thumbnail.png"
-date: "2025/01/01"
+date: "2026/04/22"
 category: "フリーランス"
 tags: ["タスク管理", "動画編集", "フリーランス", "映像クリエイター", "納期管理"]
 faq:
