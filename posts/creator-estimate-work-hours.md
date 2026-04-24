@@ -1,7 +1,7 @@
 ---
 title: "クリエイターの工数計算テンプレート｜安請け合いで損しない見積もり術"
 description: "デザイナー・動画編集者向けの工数計算テンプレート付き。見積もりで安請け合いして損しないための実践ガイド。時間単価の出し方からバッファの取り方まで解説。"
-date: "2026/04/23"
+date: "2026/04/24"
 category: "フリーランス"
 tags: ["クリエイター", "見積もり", "工数計算", "フリーランス", "テンプレート"]
 thumbnail: "/column/images/articles/creator-estimate-work-hours/thumbnail.png"
