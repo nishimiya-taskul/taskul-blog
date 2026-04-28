@@ -1,6 +1,6 @@
 ---
-title: "Slackだけでタスク管理する方法｜限界の見極め方"
-description: "Slackの標準機能だけでタスク管理する具体的な方法を解説。リマインダー・Lists・Canvasの使い分けから、フリーランスの1日の運用フロー、限界を感じたときの次の選択肢まで。"
+title: "SlackのLists・Canvas・リマインダーでタスク管理する全手順"
+description: "外部ツール不要でSlackだけタスク管理を完結させる方法を解説。リマインダー・Lists・Canvas・ブックマークの設定手順と、フリーランス向け1日の運用フローを公開。同時3案件まで対応できます。"
 thumbnail: "/column/images/articles/slack-task-management-method/thumbnail.png"
 date: "2026/04/10"
 category: "タスク管理"
