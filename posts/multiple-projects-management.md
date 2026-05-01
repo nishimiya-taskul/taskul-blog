@@ -237,6 +237,19 @@ TASKULはフリーランス専用のAIタスク管理ツールです。
 
 これらの仕組みが整えば、**案件を増やしても破綻しない**体制ができます。
 
+### 職種・場面別の関連記事
+
+複数案件の管理は職種ごとに固有の悩みがあります。あなたの職種に近い記事を読むと、より具体的なヒントが見つかります。
+
+- [Webデザイナーが案件同時進行でパンクしない3ステップ管理術](/column/web-designer-multiple-projects-burnout/)
+- [Webライターの複数案件管理術｜納期を守る5つの仕組み](/column/web-writer-multiple-projects/)
+- [動画編集者のタスク管理術｜納期と品質を両立する方法](/column/video-creator-task-management/)
+- [クリエイターの工数計算テンプレート｜安請け合いで損しない見積もり術](/column/creator-estimate-work-hours/)
+- [月末の請求忘れを仕組みで防ぐ｜チェックリスト+自動リマインド設計](/column/freelance-invoice-reminder-system/)
+- [フリーランスのスケジュール管理術](/column/freelance-schedule-management/)
+- [フリーランスの納期管理のコツ](/column/freelance-deadline-management/)
+- [クリエイターの燃え尽き症候群を防ぐセルフマネジメント術](/column/creator-burnout-prevention/)
+
 「最近ちょっとキャパオーバー気味かも」と感じているなら、今日から仕組み化を始めてください。設定不要・コピペだけで始められるTASKULなら、今日中に案件管理の仕組みが手に入ります。
 
 <a href="https://app.taskul-ai.com/register" class="cta-banner">
