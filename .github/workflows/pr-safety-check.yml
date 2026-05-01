@@ -25,15 +25,14 @@ jobs:
         run: |
           echo "## PR Safety Check" >> $GITHUB_STEP_SUMMARY
 
-          # Get diff stat between main and PR
           DIFF=$(git diff --name-status main..FETCH_HEAD)
           echo "### Changed files:" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
           echo "$DIFF" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
 
-          # Check for deleted files (lines starting with D)
-          DELETED=$(echo "$DIFF" | grep '^D' | awk '{print $2}' || true)
+          # 削除チェック: macOS自動複製ファイル（末尾 " 数字.md"）は許可
+          DELETED=$(echo "$DIFF" | grep '^D' | awk '{print $2}' | grep -vE ' [0-9]+\.md$' || true)
           if [ -n "$DELETED" ]; then
             echo "::error::PR deletes existing files. This is not allowed."
             echo "### BLOCKED: Files being deleted:" >> $GITHUB_STEP_SUMMARY
@@ -43,8 +42,8 @@ jobs:
             exit 1
           fi
 
-          # Check for modified files in protected paths
-          PROTECTED=$(echo "$DIFF" | grep '^M' | awk '{print $2}' | grep -E '^(src/|CLAUDE\.md|ops/OPS\.md|\.github/)' || true)
+          # 保護パスのmodifyチェック (例外: pr-safety-check.yml 自身は更新可能にする)
+          PROTECTED=$(echo "$DIFF" | grep '^M' | awk '{print $2}' | grep -E '^(src/|CLAUDE\.md|ops/OPS\.md|\.github/)' | grep -v '^\.github/workflows/pr-safety-check\.yml$' || true)
           if [ -n "$PROTECTED" ]; then
             echo "::error::PR modifies protected files. This is not allowed."
             echo "### BLOCKED: Protected files being modified:" >> $GITHUB_STEP_SUMMARY
@@ -54,5 +53,16 @@ jobs:
             exit 1
           fi
 
+          # 新規追加ファイルに macOS 自動複製パターン (" 2.md" 等) が混入していないか
+          ADDED_DUP=$(echo "$DIFF" | grep '^A' | awk '{print $2}' | grep -E ' [0-9]+\.(md|mdx|jpg|png)$' || true)
+          if [ -n "$ADDED_DUP" ]; then
+            echo "::error::macOS自動複製ファイル（末尾 \" N.ext\"）が含まれています。git add 前に削除してください。"
+            echo "### BLOCKED: Mac duplicate files detected:" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "$ADDED_DUP" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+
           echo "### Result: PASS" >> $GITHUB_STEP_SUMMARY
-          echo "No deletions or protected file modifications detected."
+          echo "No deletions, protected modifications, or duplicate files detected."
