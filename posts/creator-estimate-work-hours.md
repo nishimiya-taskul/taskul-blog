@@ -317,6 +317,13 @@ TASKULはクリエイター向けに設計されたタスク管理ツールで�
 
 この記事の工数テンプレートをコピーして、自分の実績データで数字を調整してください。案件を重ねるごとに精度が上がっていきます。
 
+### あわせて読みたい
+
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/)
+- [フリーランスの見積もり書き方ガイド](/column/freelance-estimate-writing-guide/)
+- [月末の請求忘れを仕組みで防ぐ｜チェックリスト+自動リマインド設計](/column/freelance-invoice-reminder-system/)
+- [カメラマンの案件管理術](/column/photographer-project-management/)
+
 ## まとめ
 
 クリエイターの見積もりで損しないためのポイントを整理します。

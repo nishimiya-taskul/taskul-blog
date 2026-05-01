@@ -249,6 +249,9 @@ TASKULはフリーランス専用のAIタスク管理ツールです。
 - [フリーランスのスケジュール管理術](/column/freelance-schedule-management/)
 - [フリーランスの納期管理のコツ](/column/freelance-deadline-management/)
 - [クリエイターの燃え尽き症候群を防ぐセルフマネジメント術](/column/creator-burnout-prevention/)
+- [広告運用マーケターのタスク管理術](/column/marketer-ad-task-management/)
+- [カメラマンの案件管理術｜撮影前・現場・納品まで一元化する3ステップ](/column/photographer-project-management/)
+- [エクセルでの案件管理に限界を感じたら｜卒業のサインと移行手順](/column/excel-project-management-limit/)
 
 「最近ちょっとキャパオーバー気味かも」と感じているなら、今日から仕組み化を始めてください。設定不要・コピペだけで始められるTASKULなら、今日中に案件管理の仕組みが手に入ります。
 
