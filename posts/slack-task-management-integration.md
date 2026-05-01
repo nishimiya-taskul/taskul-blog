@@ -331,6 +331,12 @@ Todoistは個人向けタスク管理の定番です。Slack連携はシンプ�
 </div>
 </div>
 
+### あわせて読みたい
+
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/) — Slack連携の前に案件全体の管理を整える
+- [個人向けタスク管理アプリ無料7選](/column/task-management-apps-free/) — Slack以外の選択肢も比較したい人へ
+- [チームのタスク共有がうまくいかない原因と改善策5選](/column/team-task-sharing-failure/) — チームでSlackを使う場合の落とし穴
+
 ## まとめ
 
 Slackでのタスク管理は、標準機能（リマインダー・Lists・Canvas）だけでは同時3案件程度が限界です。それ以上の案件を抱えるなら、専用のタスク管理ツールと連携するのが現実的な解決策です。
