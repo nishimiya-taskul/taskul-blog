@@ -221,6 +221,13 @@ Backlogは開発チームとの連携に強く、エンジニアが在籍する�
 </div>
 </div>
 
+### あわせて読みたい
+
+- [チームのタスク共有がうまくいかない原因と改善策5選](/column/team-task-sharing-failure/)
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/)
+- [Web制作プロジェクト管理テンプレート](/column/web-production-project-management-template/)
+
+
 ## まとめ
 
 制作会社の進行管理が属人化する原因は、**情報がディレクター個人に閉じていること**に集約されます。

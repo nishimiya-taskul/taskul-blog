@@ -329,6 +329,14 @@ TASKULに登録したタスクの期日は、Googleカレンダーと自動連�
 
 ツール選びに迷ったら、前述の比較表を参考にしてください。まずは無料プランで試して、自分のワークフローに合うか確認するのが最も失敗しないやり方です。
 
+### あわせて読みたい
+
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/)
+- [Webデザイナーが案件同時進行でパンクしない3ステップ管理術](/column/web-designer-multiple-projects-burnout/)
+- [イラストレーターの案件管理術｜納期と品質を両立する方法](/column/illustrator-project-management/)
+- [クリエイターのタスク管理術](/column/creator-task-management/)
+
+
 ## まとめ
 
 デザイナーのタスク管理は、修正依頼の曖昧さ・複数案件の同時進行・デザイン外の雑務という3つの課題が原因で破綻しやすくなります。

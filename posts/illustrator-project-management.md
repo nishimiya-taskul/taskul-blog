@@ -235,6 +235,14 @@ TASKULはフリーランス・クリエイター専用のAIタスク管理ツー
 
 これを習慣にするだけで、案件管理は回り始めます。
 
+### あわせて読みたい
+
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/)
+- [クリエイターのタスク管理術](/column/creator-task-management/)
+- [デザイナーのタスク管理術](/column/designer-task-management/)
+- [クリエイターの燃え尽き症候群を防ぐセルフマネジメント術](/column/creator-burnout-prevention/)
+
+
 ## まとめ：イラストレーターの案件管理は「確認待ち」がカギ
 
 イラストレーターの案件管理で最も重要なのは、**「確認待ち」という自分のタスクではない状態を可視化すること**です。
