@@ -6,3 +6,10 @@ dist
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+.env
+.env.*
+.env.local
+
+# macOS の自動複製ファイル（ファイル名末尾の " 2.md" など）
+posts/* [0-9].md
+posts/* [0-9][0-9].md
