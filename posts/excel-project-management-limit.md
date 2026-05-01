@@ -222,6 +222,12 @@ TASKULではクライアントごとに案件を自動分類し、進捗・納�
 </div>
 </div>
 
+### あわせて読みたい
+
+- [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/) — エクセル卒業後の案件管理の作り方
+- [タスク管理ツールおすすめ7選](/column/task-management-tools-recommended/) — エクセル代替の本格派ツール
+- [個人向けタスク管理アプリ無料7選](/column/task-management-apps-free/) — エクセルから無料アプリへ移行したい人へ
+
 ## まとめ：エクセルは「始め方」であって「終わり方」ではない
 
 ![効率的に仕事を管理するフリーランスのイメージ](/column/images/articles/excel-project-management-limit/05.jpg)
