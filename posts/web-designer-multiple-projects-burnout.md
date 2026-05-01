@@ -21,15 +21,13 @@ writer:
   bio: "フリーランス・クリエイター向けのタスク管理情報を発信しています。"
 ---
 
-![Webデザイナーが複数案件を同時進行で管理しているデスクの様子](/images/articles/web-designer-multiple-projects-burnout/01.png)
-<!-- 画像未設定: Webデザイナーのデスクに複数のモニターやデザインツールが並ぶ横長写真 -->
+![Webデザイナーが複数案件を同時進行で管理しているデスクの様子](/column/images/articles/web-designer-multiple-projects-burnout/01.jpg)
 
 Webデザイナーが案件の同時進行でパンクする原因は、タスクの全体像が見えていないことです。「棚卸し→時間ブロック→ツール連携」の3ステップを実践すれば、案件が増えても破綻しません。この記事では、パンクする前に仕組みで防ぐ具体的なメソッドを解説します。
 
 ## Webデザイナーが同時進行でパンクする3つの原因とは？
 
-![Webデザイナーが案件の同時進行に追われてパンクしそうな様子](/images/articles/web-designer-multiple-projects-burnout/02.png)
-<!-- 画像未設定: 複数のタブやデザインファイルが開かれたPC画面のイメージ -->
+![Webデザイナーが案件の同時進行に追われてパンクしそうな様子](/column/images/articles/web-designer-multiple-projects-burnout/02.jpg)
 
 「気づいたら全案件が火を噴いていた」。フリーランスWebデザイナーなら、一度は経験があるはずです。パンクの原因は根性や能力の問題ではなく、仕組みの欠如です。
 
@@ -72,8 +70,7 @@ Webデザイナーの仕事は、クライアントからのフィードバッ�
 
 ## パンクを防ぐ3ステップ管理メソッドとは？
 
-![Webデザイナーの案件同時進行を整理する3ステップのイメージ](/images/articles/web-designer-multiple-projects-burnout/03.png)
-<!-- 画像未設定: 3ステップのフロー図、または整理されたタスクボードの横長画像 -->
+![Webデザイナーの案件同時進行を整理する3ステップのイメージ](/column/images/articles/web-designer-multiple-projects-burnout/03.jpg)
 
 パンクを防ぐために必要なのは、シンプルな3ステップです。「棚卸し」「時間ブロック」「ツール連携」。この順番が重要です。
 
@@ -140,8 +137,7 @@ Webデザイナーの仕事は、クライアントからのフィードバッ�
 
 ## Webデザイナーの同時進行に使えるツールはどれ？
 
-![Webデザイナーの案件同時進行に使えるタスク管理ツールの比較](/images/articles/web-designer-multiple-projects-burnout/04.png)
-<!-- 画像未設定: ツール比較のイメージ、または複数ツールのロゴが並ぶ横長画像 -->
+![Webデザイナーの案件同時進行に使えるタスク管理ツールの比較](/column/images/articles/web-designer-multiple-projects-burnout/04.jpg)
 
 Webデザイナーが複数案件を管理するとき、どのツールが合うかは「管理スタイル」で変わります。ここでは代表的な4つのツールをフェアに比較します。
 
@@ -214,8 +210,7 @@ TASKULは、フリーランス・クリエイター向けに設計されたタ�
 
 ## デザインツールとタスク管理を連携させる方法は？
 
-![Webデザイナーがデザインツールとタスク管理を連携させている画面](/images/articles/web-designer-multiple-projects-burnout/05.png)
-<!-- 画像未設定: FigmaとタスクツールをPC画面で同時に開いている横長イメージ -->
+![Webデザイナーがデザインツールとタスク管理を連携させている画面](/column/images/articles/web-designer-multiple-projects-burnout/05.jpg)
 
 Webデザイナー特有の課題は、「デザインファイル」と「タスク」が別々に存在することです。修正依頼を受けても、どのFigmaファイルのどのページかがわからなければ、探す時間だけで数十分ロスします。
 

@@ -30,8 +30,7 @@ writer:
 
 ## 月末に請求を忘れるフリーランスはどのくらいいる？
 
-![フリーランスが月末の請求作業に追われている様子](/images/articles/freelance-invoice-reminder-system/01.png)
-<!-- 画像未設定: デスクでパソコンに向かうフリーランスのイメージ写真（横長） -->
+![フリーランスが月末の請求作業に追われている様子](/column/images/articles/freelance-invoice-reminder-system/01.jpg)
 
 内閣官房の「フリーランス実態調査」によると、フリーランスの約4人に1人が報酬トラブルを経験しています。そのなかでも「請求書の出し忘れ」は自分の過失で売上を失う深刻な問題です。
 
@@ -82,8 +81,7 @@ writer:
 
 ## すぐ使える請求漏れチェックリストの作り方
 
-![請求漏れチェックリストのイメージ](/images/articles/freelance-invoice-reminder-system/02.png)
-<!-- 画像未設定: チェックリストを確認しているイメージ写真（横長） -->
+![請求漏れチェックリストのイメージ](/column/images/articles/freelance-invoice-reminder-system/02.jpg)
 
 請求漏れを防ぐ最もシンプルな方法は、チェックリストによる定期確認です。ここでは、すぐに使える2種類のチェックリストを紹介します。
 
@@ -114,8 +112,7 @@ writer:
 
 ## 自動リマインドはどう設計すれば効果的？
 
-![自動リマインドの設計イメージ](/images/articles/freelance-invoice-reminder-system/03.png)
-<!-- 画像未設定: リマインド通知のスクリーンショットまたはイメージ写真（横長） -->
+![自動リマインドの設計イメージ](/column/images/articles/freelance-invoice-reminder-system/03.jpg)
 
 チェックリストだけでは「チェックすること自体を忘れる」問題が残ります。ここで必要になるのが自動リマインドです。
 
@@ -179,8 +176,7 @@ Slackを常用しているなら、Slackのリマインダー機能が手軽で�
 
 ## 請求漏れ対策に使えるツールはどれ？
 
-![請求漏れ対策ツールの比較](/images/articles/freelance-invoice-reminder-system/04.png)
-<!-- 画像未設定: ツール比較のイメージ写真またはスクリーンショット（横長） -->
+![請求漏れ対策ツールの比較](/column/images/articles/freelance-invoice-reminder-system/04.jpg)
 
 手動のチェックリスト+リマインドでは限界を感じる場合、ツールで自動化するのが次のステップです。ここでは請求漏れ対策に使えるツールを3つ比較します。
 
@@ -248,8 +244,7 @@ TASKULは案件管理・タスク管理と請求を一つの画面で管理で�
 
 ## 忘れっぽい人が仕組みを定着させるコツは？
 
-![仕組みを定着させるコツのイメージ](/images/articles/freelance-invoice-reminder-system/05.png)
-<!-- 画像未設定: 仕組みが定着して安心して働くフリーランスのイメージ写真（横長） -->
+![仕組みを定着させるコツのイメージ](/column/images/articles/freelance-invoice-reminder-system/05.jpg)
 
 チェックリストもリマインドも、使い続けなければ意味がありません。忘れっぽい人でも仕組みを定着させるコツを3つ紹介します。
 
