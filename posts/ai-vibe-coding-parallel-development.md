@@ -1,7 +1,7 @@
 ---
 title: "AIバイブコーディング時代の並行開発術｜タスク管理と開発代行の使い分け"
 description: "AIバイブコーディングで並行開発が当たり前になる時代に、個人・小規模事業者がプロダクトを同時に進める方法を解説。タスク管理と開発代行サービス（AIまる投げくん）の使い分け、ハイブリッド運用の考え方を紹介します。"
-date: "2026/05/04"
+date: "2026/05/02"
 category: "働き方"
 tags: ["AIバイブコーディング", "並行開発", "Vibe Coding", "AI開発", "タスク管理"]
 thumbnail: "/column/images/articles/ai-vibe-coding-parallel-development/thumbnail.png"
