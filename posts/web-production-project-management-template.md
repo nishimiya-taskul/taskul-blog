@@ -256,6 +256,7 @@ TASKULはフリーランス・クリエイター向けに設計されたAIタス
 - [制作会社の進行管理が属人化する原因と解消する5ステップ](/column/production-team-progress-management/)
 - [複数案件を同時に回すフリーランスの案件管理術](/column/multiple-projects-management/)
 - [デザイナーのタスク管理術](/column/designer-task-management/)
+- [GoogleはHTMLの最初の2MBしか読まない｜Web制作で押さえるSEOチェック](/column/html-2mb-seo-limit/)
 
 
 ## まとめ：テンプレートの「型」より「続けられる仕組み」を選ぼう
