@@ -1,7 +1,7 @@
 ---
 title: "GoogleはHTMLの最初の2MBしか読まない｜SEO担当者が今すぐ確認すべきこと"
-description: "Google公式が明言したHTML 2MB制限。2MBを超えた部分はクロールもレンダリングもされず、存在しない扱いに。具体的な確認方法と対策を解説。"
-date: "2026/04/01"
+description: "Google公式が明言したHTML 2MB制限。2MBを超えた部分はGoogleに存在しない扱い。リッチスニペットが出ない・順位が上がらない原因をチェックする方法と今すぐできる5つの対策。"
+date: "2026/05/09"
 category: "タスク管理"
 tags: ["タスク管理", "フリーランス"]
 thumbnail: "/column/images/articles/html-2mb-seo-limit/thumbnail.png"
