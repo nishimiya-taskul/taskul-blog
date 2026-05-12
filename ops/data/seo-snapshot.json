@@ -1,15 +1,29 @@
 {
-  "exported_at": "2026-05-11T04:20:00.922Z",
+  "exported_at": "2026-05-12T00:35:51.629Z",
   "site_id": "29f632b8-dde4-415e-94da-0f6df802d549",
   "metrics": [
     {
-      "id": 2566,
+      "id": 3116,
       "site_id": "29f632b8-dde4-415e-94da-0f6df802d549",
-      "date": "2026-05-08",
+      "date": "2026-05-09",
       "impressions": 0,
       "clicks": 0,
       "ctr": 0,
       "avg_position": 0,
+      "sessions": 30,
+      "pageviews": 33,
+      "organic_sessions": null,
+      "conversions": 0,
+      "created_at": "2026-05-11T20:02:07.339546+00:00"
+    },
+    {
+      "id": 2566,
+      "site_id": "29f632b8-dde4-415e-94da-0f6df802d549",
+      "date": "2026-05-08",
+      "impressions": 27,
+      "clicks": 2,
+      "ctr": 7.41,
+      "avg_position": 22.5,
       "sessions": 43,
       "pageviews": 39,
       "organic_sessions": null,
@@ -407,20 +421,6 @@
       "organic_sessions": null,
       "conversions": 10,
       "created_at": "2026-04-13T04:05:30.038747+00:00"
-    },
-    {
-      "id": 229,
-      "site_id": "29f632b8-dde4-415e-94da-0f6df802d549",
-      "date": "2026-04-09",
-      "impressions": 37,
-      "clicks": 6,
-      "ctr": 16.22,
-      "avg_position": 30.3,
-      "sessions": 148,
-      "pageviews": 687,
-      "organic_sessions": null,
-      "conversions": 1,
-      "created_at": "2026-04-13T04:05:29.979656+00:00"
     }
   ],
   "articles": [
