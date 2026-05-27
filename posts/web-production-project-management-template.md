@@ -1,7 +1,7 @@
 ---
-title: "Web制作の案件管理テンプレート｜抜け漏れゼロの項目設計と運用術"
-description: "Web制作の案件管理に必要なテンプレート項目と運用方法を解説。エクセル・スプレッドシートの限界を超え、AIで依頼文からタスクを自動生成する方法まで紹介します。"
-date: "2026/04/03"
+title: "Web制作の案件管理テンプレート｜無料で使える8項目と運用術"
+description: "Web制作の案件管理に必要な8項目を網羅したテンプレートを無料公開。受注から納品まで抜け漏れゼロで管理できる設計と、エクセルを卒業すべきタイミングを解説。"
+date: "2026/05/27"
 category: "案件管理"
 tags: ["案件管理", "Web制作", "テンプレート"]
 thumbnail: "/column/images/articles/web-production-project-management-template/thumbnail.png"
