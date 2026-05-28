@@ -1,6 +1,6 @@
 ---
-title: "Slackのタスク管理方法3選｜限界と連携ツールを徹底比較"
-description: "Slackのリマインダー・Lists・Canvasで3案件まで管理する方法と、4案件以上で必要な連携ツール4選を比較。Trello・Asana・Todoist・TASKUL比較表付きで解説。"
+title: "Slackでタスク管理する方法｜限界と連携ツール4選を比較"
+description: "Slackのリマインダー・Lists・Canvasで同時3案件まで管理する手順と、4案件以上で必要な連携ツール4選（Trello・Asana・Todoist・TASKUL）を比較表付きで解説。フリーランス・チーム向け。"
 thumbnail: "/column/images/articles/slack-task-management-integration/thumbnail.png"
 date: "2026/04/10"
 category: "ツール比較"
