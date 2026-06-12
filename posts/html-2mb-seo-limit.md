@@ -1,7 +1,7 @@
 ---
-title: "GoogleはHTMLの最初の2MBしか読まない｜SEO担当者が今すぐ確認すべきこと"
-description: "GooglebotはHTMLの最初の2MB（2,097,152バイト）までしかクロールしません。2MBを超えた構造化データ・内部リンクは「存在しない扱い」。自社サイトの確認コマンドと今すぐできる5つの削減対策を解説。"
-date: "2026/04/01"
+title: "HTML 2MB制限でSEOが崩れる理由と5つの確認手順"
+description: "Googlebotが読むのはHTMLの最初2MBだけ。その先の構造化データ・内部リンクはGoogleに無視されます。自サイトが危険域か1分で確認できる方法と、今すぐ実行できる5つの対策を解説します。"
+date: "2026/06/12"
 category: "タスク管理"
 tags: ["タスク管理", "フリーランス"]
 thumbnail: "/column/images/articles/html-2mb-seo-limit/thumbnail.png"
