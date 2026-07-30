@@ -1,7 +1,7 @@
 ---
 title: "AIタスク管理ツール5選｜自動化できること・できないことを正直に解説"
-description: "AI搭載のタスク管理ツールを5つ比較。自動化できる作業とできない作業を正直に整理し、導入判断に必要な情報をまとめました。"
-date: "2026/04/07"
+description: "AIタスク管理ツール5選を正直に比較。ChatGPT連携・音声入力・優先度自動提案など実際に動く機能と月額料金を一覧化。自動化できる作業・できない作業を明確に整理し、フリーランスに最適な1本を選べます。"
+date: "2026/07/30"
 category: "タスク管理"
 tags: ["AI", "タスク管理", "自動化", "ツール比較"]
 thumbnail: "/column/images/articles/ai-task-management-tools/thumbnail.png"
