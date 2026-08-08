@@ -1,7 +1,7 @@
 ---
 title: "個人向けタスク管理アプリ無料7選｜選び方とおすすめ徹底比較"
-description: "個人で使える無料のタスク管理アプリ7つを徹底比較。iPhone・Androidで使える定番アプリの選び方、機能差、続けやすさを実体験ベースで解説。あなたに合う1つが見つかります。"
-date: "2026/04/07"
+description: "無料タスク管理アプリを選び間違えると続きません。iPhone・Android両対応の7アプリを機能差・続けやすさで実体験比較し、あなたのタスク量と使い方に合う1本が決まります。"
+date: "2026/08/08"
 category: "タスク管理"
 tags: ["タスク管理", "無料", "アプリ", "個人"]
 thumbnail: "/column/images/articles/task-management-apps-free/thumbnail.png"
