@@ -1,6 +1,6 @@
 # KW候補リスト
 
-*最終更新: 2026-07-27 (W31リサーチ反映)*
+*最終更新: 2026-08-10 (W33リサーチ反映)*
 
 ## 執筆済み
 
@@ -21,6 +21,8 @@
 | タスク管理 続かない → 習慣化 | Solve | 🟡 中 | task-management-habit-formation | KW-B+Gを統合。既存記事との差別化要確認 |
 | 小規模チーム タスク管理 ツール 比較 | Compare | 🟡 中 | small-team-task-management-tools | サブターゲット（制作会社）向け・W31追加 |
 | 個人事業主 請求書 管理 タスク化 | Do | 🟡 中 | kojin-jigyonushi-invoice-management | 既存請求記事と差別化・W31追加 |
+| **フリーランス 契約書 管理** | Do | 🟡 中 | freelance-contract-management | W33新規。フリーランス新法（2026年）で時事性高。管理フロー切り口が競合空白 |
+| **フリーランス 受注管理 方法** | Do | 🟡 中 | freelance-order-management | W33新規。案件管理クラスター補強。受注判断〜初動管理の切り口 |
 | ~~タスク管理 優先順位 つけ方~~ | ~~Do~~ | ~~高~~ | — | 上行に統合（フリーランス特化版に変更） |
 | ~~動画クリエイター タスク管理~~ | ~~Do~~ | ~~中~~ | — | ~~執筆済み~~ |
 | リモートワーク タスク管理 | Compare | 🟢 低 | — | 競合高密度・ターゲット外の可能性 |
@@ -28,11 +30,12 @@
 | ~~Web制作 進行管理 テンプレート~~ | ~~Do~~ | ~~中~~ | — | ~~production-team-progress-managementで対応済み~~ |
 | Slack タスク管理 ツール 比較 | Compare | 🟢 低 | — | 既存Slack記事リライト後に判断 |
 | フリーランス 確定申告 タスク管理 | Do | 🟢 低 | — | 季節性あり（1-3月に実施） |
+| Webデザイナー 見積書 作り方 | Do | 🟢 低 | web-designer-estimate-template | W33確認済み。競合充実・テンプレート必須。creator-estimate-work-hoursとセット |
 
-## 次回リサーチ候補（W32以降）
+## 次回リサーチ候補（W34以降）
 
 | KW | メモ |
 |---|---|
-| AI タスク管理 始め方 | ai-task-management-toolsと差別化が取れれば |
-| Webデザイナー 見積書 作り方 | creator-estimate-work-hoursとセット |
-| フリーランス 契約書 管理 | 案件管理の次のステップ・法務系 |
+| AI タスク管理 始め方（ChatGPT Tasks） | W33確認済み。競合多いがフリーランス特化なら可。ai-task-management-toolsリライト後に判断 |
+| エンジニア フリーランス タスク管理 | 職種特化の残り候補。既存デザイナー・コピーライター記事の隣接 |
+| フリーランス 稼働率 管理 | 複数案件掛け持ちの受注過多防止。multiple-projects-managementの隣接 |
