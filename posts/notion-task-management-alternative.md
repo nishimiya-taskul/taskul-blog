@@ -1,5 +1,5 @@
 ---
-title: "Notionのタスク管理が「めんどくさい」と感じたら読む記事｜もっとシンプルな選択肢"
+title: "Notionのタスク管理が「めんどくさい」理由｜代替ツール3選"
 description: "Notionのタスク管理がめんどくさいのはタスク追加に平均8ステップかかるため。設定ゼロで今日から使えるシンプルな代替ツール3選を比較し、Notionを続けるか乗り換えるかの判断基準を解説します。"
 thumbnail: "/column/images/articles/notion-task-management-alternative/thumbnail.png"
 date: "2026/07/26"
