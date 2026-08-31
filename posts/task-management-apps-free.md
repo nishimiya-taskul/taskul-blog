@@ -1,9 +1,9 @@
 ---
-title: "タスク管理アプリ無料7選｜個人・フリーランス向け比較と選び方"
-description: "無料タスク管理アプリ7選を比較。「選んでも続かない」失敗を防ぐ選び方から、iPhone・Android対応・機能差・無料の壁まで実体験で解説。あなたに合う1本がすぐ決まります。"
-date: "2026/08/10"
+title: "無料タスク管理アプリ7選｜スマホ対応・続けやすさで厳選比較"
+description: "個人・フリーランスの無料タスク管理アプリはTodoist・Google ToDo・TickTick・TASKUL等7選がおすすめ。iOS/Android対応・機能差・無料制限を比較表で整理し、続けられる1本を最速で選ぶ方法を解説します。"
+date: "2026/08/31"
 category: "タスク管理"
-tags: ["タスク管理", "無料", "アプリ", "個人"]
+tags: ["タスク管理", "無料", "アプリ", "個人", "フリーランス"]
 thumbnail: "/column/images/articles/task-management-apps-free/thumbnail.png"
 faq:
   - question: "タスク管理アプリは無料でも十分使えますか？"
