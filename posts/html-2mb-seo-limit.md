@@ -1,7 +1,7 @@
 ---
 title: "HTML 2MB制限｜Googleが見逃すSEO損失と5つの対策"
 description: "HTMLが2MBを超えるとGoogleはそれ以降を読みません。構造化データ・内部リンクが無効になりSEO損失に直結します。curl1行で今すぐ確認し、対策5選で損失をゼロにしましょう。"
-date: "2026/08/11"
+date: "2026/09/02"
 category: "タスク管理"
 tags: ["タスク管理", "フリーランス"]
 thumbnail: "/column/images/articles/html-2mb-seo-limit/thumbnail.png"
@@ -20,6 +20,12 @@ faq:
     answer: "必ずhead内に配置してください。JSON-LDをフッター付近に置くとHTML 2MB制限で読み取られないリスクがあります。title、meta description、canonicalも同様にhead内が必須です。"
   - question: "TASKULのようなSaaSサイトでもHTML 2MB制限に注意が必要？"
     answer: "はい。SaaSのLPやヘルプページはコンテンツ量が多くなりがちで、特にFAQ・機能一覧・料金表を1ページにまとめると2MBに近づくことがあります。TASKULではNext.jsによるSSGで軽量なHTML出力を実現し、構造化データもhead内に配置しています。自社サイトのSEO管理にもTASKULの3000件以上のWeb制作知識を持つAIディレクターが活用できます。"
+  - question: "CSSやJSのファイルサイズはHTML 2MB制限に含まれる？"
+    answer: "含まれません。HTML 2MBの制限はHTMLドキュメント本体（.htmlファイル）のみです。外部CSS・外部JS・画像などのサブリソースは別途ダウンロードされます。ただしインラインで埋め込んだCSS/JSはHTMLの一部なので制限に含まれます。"
+  - question: "HTML 2MB制限はモバイルとPCで違いはある？"
+    answer: "基本的に同じ2MB制限が適用されます。ただしGoogleはモバイルファーストインデックスを採用しており、モバイル向けHTMLが優先評価されます。レスポンシブデザインでPC/モバイル共通のHTMLを使っている場合は問題ありませんが、別々のHTMLを提供している場合はモバイル版のサイズを重点的に確認してください。"
+  - question: "HTMLサイズを削減するとき、最初に確認すべき項目は？"
+    answer: "まずcurlコマンド（curl -s https://サイトURL/ | wc -c）でHTMLサイズを計測します。500KB以下は安全、1MB超は要注意、1.5MB超は即対応が必要です。原因特定にはGoogle PageSpeed Insightsの「過大なDOMサイズを回避する」と「レンダリングを妨げるリソースを排除する」の項目を確認してください。"
 writer:
   name: "佐々木 篤"
   role: "Web制作ディレクター / 編集"
