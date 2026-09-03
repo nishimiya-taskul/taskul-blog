@@ -1,7 +1,7 @@
 ---
 title: "HTML 2MB制限｜Googleが見逃すSEO損失と5つの対策"
 description: "HTMLが2MBを超えるとGoogleはそれ以降を読みません。構造化データ・内部リンクが無効になりSEO損失に直結します。curl1行で今すぐ確認し、対策5選で損失をゼロにしましょう。"
-date: "2026/08/11"
+date: "2026/09/03"
 category: "タスク管理"
 tags: ["タスク管理", "フリーランス"]
 thumbnail: "/column/images/articles/html-2mb-seo-limit/thumbnail.png"
@@ -20,6 +20,17 @@ faq:
     answer: "必ずhead内に配置してください。JSON-LDをフッター付近に置くとHTML 2MB制限で読み取られないリスクがあります。title、meta description、canonicalも同様にhead内が必須です。"
   - question: "TASKULのようなSaaSサイトでもHTML 2MB制限に注意が必要？"
     answer: "はい。SaaSのLPやヘルプページはコンテンツ量が多くなりがちで、特にFAQ・機能一覧・料金表を1ページにまとめると2MBに近づくことがあります。TASKULではNext.jsによるSSGで軽量なHTML出力を実現し、構造化データもhead内に配置しています。自社サイトのSEO管理にもTASKULの3000件以上のWeb制作知識を持つAIディレクターが活用できます。"
+howto:
+  - name: "HTMLサイズをcurlで計測する"
+    text: "ターミナルで「curl -s https://あなたのサイトURL/ | wc -c」を実行。出力値が2,097,152（2MB）を超えていれば即対応が必要です。500KB以下なら安全圏です。"
+  - name: "超過原因を特定する"
+    text: "ページソースを開き、インラインCSSやscriptタグ、base64でエンコードされた画像データを探します。これらがHTMLサイズ増大の原因の9割を占めます。"
+  - name: "CSSとJSを外部ファイル化する"
+    text: "インラインのstyleタグとscriptタグを外部ファイルに切り出します。WordPressはW3 Total CacheやAsset CleanUpで不要スクリプトを除去するのが効果的です。"
+  - name: "構造化データをhead内に移動する"
+    text: "JSON-LDスキーマをbody末尾からhead内に移動します。2MB制限に関係なくGoogleはhead内を優先的に読むため、常にhead内への配置が推奨です。"
+  - name: "修正後にGSCで再クロールを依頼する"
+    text: "対策後にcurlで再計測してサイズ削減を確認。Google Search Consoleで対象URLのインデックスリクエストを送信し、修正内容をGoogleに認識させます。"
 writer:
   name: "佐々木 篤"
   role: "Web制作ディレクター / 編集"
