@@ -1,7 +1,7 @@
 ---
-title: "個人のタスク管理方法4パターン｜紙・Excel・Notion・専用ツールの使い分け"
-description: "個人のタスク管理方法を4パターンに分類。紙・Excel・Notion・専用ツールのメリットとデメリットを比較し、自分に合った方法が見つかります。"
-date: "2026/04/07"
+title: "個人のタスク管理方法4選｜紙・Excel・専用ツールの使い分け"
+description: "紙・Excel・Notion・専用ツールの4パターンを徹底比較。1日10件以下のタスクなら紙で十分、月5件以上の案件を抱えるなら専用ツールが正解。自分に合う方法がすぐ決まります。"
+date: "2026/09/06"
 category: "タスク管理"
 tags: ["タスク管理", "方法", "個人", "ノウハウ"]
 thumbnail: "/column/images/articles/personal-task-management-method/thumbnail.png"
