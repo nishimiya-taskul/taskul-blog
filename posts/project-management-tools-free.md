@@ -1,7 +1,7 @@
 ---
 title: "無料のプロジェクト管理ツール6選｜フリーランスと小規模チームに最適なのは"
-description: "無料で使えるプロジェクト管理ツールを6つ厳選比較。フリーランスや小規模チームが選ぶべきポイントを、比較表つきで解説します。"
-date: "2026/04/07"
+description: "無料プロジェクト管理ツール6選を比較表で一覧化。Trello・Notion・Backlogのメンバー数制限・ガントチャートの有無・AI機能を軸に、フリーランスと小規模チームの最適な1本を選べます。"
+date: "2026/09/09"
 category: "案件管理"
 tags: ["プロジェクト管理", "無料", "ツール比較", "フリーランス"]
 thumbnail: "/column/images/articles/project-management-tools-free/thumbnail.png"
