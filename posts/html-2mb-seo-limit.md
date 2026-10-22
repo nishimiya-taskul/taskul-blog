@@ -1,6 +1,6 @@
 ---
 title: "HTML 2MB制限｜Googleが見逃すSEO損失と5つの対策"
-description: "HTML 2MB超えでGoogleが読み切れず、構造化データ・内部リンクが無効化されSEO損失が発生。curl1行で自社サイトを即確認、対策5選で損失を完全にゼロへ。SEO担当者・Web制作者必読。"
+description: "GoogleはHTMLの最初2MBしか読まない。2MB超えると構造化データ・内部リンクが丸ごと無視されSEO損失が発生します。curl1行で即確認、500KB以下が安全圏。SEO担当者・Web制作者向けに対策5選を解説。"
 date: "2026/09/03"
 category: "タスク管理"
 tags: ["タスク管理", "フリーランス"]
