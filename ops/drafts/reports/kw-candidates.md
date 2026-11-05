@@ -1,6 +1,6 @@
 # KW候補リスト
 
-*最終更新: 2026-08-31 (W35リサーチ反映・後半追加)*
+*最終更新: 2026-09-07 (W36リサーチ反映・季節性KW追加)*
 
 ## 執筆済み
 
@@ -18,9 +18,12 @@
 |---|---|---|---|---|
 | **フリーランス タスク管理 始め方** | Do | 🔴 高 | freelance-task-management-beginner-guide | CV直結・競合空白・W31〜W35最優先（**6週間未着手**） |
 | **タスク管理 優先順位 つけ方（フリーランス向け）** | Do | 🔴 高 | freelance-task-priority-method | フリーランス特化で差別化・W31/W35確認・**6週間未着手** |
+| **フリーランス 下半期 仕事計画** | Do | 🔴 高 | freelance-second-half-planning | W36新規（9/7）追加・9月ピーク季節性KW・**今週着手必須** |
 | **フリーランス クライアント 連絡 管理** | Do | 🟡 中 | freelance-client-communication-management | W35初回（8/24）追加・TASKUL訴求直結・競合空白 |
-| **SNS運用 タスク管理 ツール** | Do/Compare | 🟡 中 | sns-marketer-task-management | W35初回（8/24）追加・職種特化・権威記事なし |
+| **SNS運用代行 タスク管理 方法** | Do/Compare | 🟡 中 | sns-marketer-task-management | W35初回（8/24）追加・W36詳細確認・職種9番目・競合空白 |
 | **フリーランス 売上管理 タスク化** | Do | 🟡 中 | freelance-revenue-task-management | W35初回（8/24）追加・会計ソフト記事との差別化可 |
+| **フリーランス 確定申告 準備 チェックリスト** | Do | 🟡 中 | freelance-tax-return-checklist | W36新規（9/7）追加・10-12月ピーク・9月中に公開で先行インデックス狙い |
+| **フリーランス 単価交渉 タイミング・方法** | Do | 🟡 中 | freelance-rate-negotiation-guide | W36新規（9/7）追加・下半期計画記事と連携 |
 | **Webディレクター 進行管理 テンプレート** | Do | 🟡 中 | web-director-project-management | W35後半（8/31）追加・職種特化の空白・サブターゲット向け |
 | **ガントチャート フリーランス 作り方 無料** | Do | 🟡 中 | freelance-gantt-chart-guide | W35後半（8/31）追加・案件視覚化ニーズ・TASKUL CV誘導しやすい |
 | **Trello フリーランス タスク管理 使い方** | Do | 🟡 中 | trello-freelance-task-management | W35後半（8/31）追加・Notion記事との内部リンク強化 |
@@ -38,12 +41,12 @@
 | Slack タスク管理 ツール 比較 | Compare | 🟢 低 | — | 既存Slack記事リライト後に判断 |
 | フリーランス 確定申告 タスク管理 | Do | 🟢 低 | — | 季節性あり（10-12月から着手推奨） |
 
-## 次回リサーチ候補（W36以降）
+## 次回リサーチ候補（W37以降）
 
 | KW | メモ |
 |---|---|
 | AI タスク管理 始め方 | ai-task-management-toolsと差別化が取れれば |
 | Webデザイナー 見積書 作り方 | creator-estimate-work-hoursとセット |
-| フリーランス 契約書 管理 | → W35後半で未執筆候補に昇格済み |
-| フリーランス 下半期 仕事計画 | 季節性あり（9月ピーク）・W36着手推奨 |
+| フリーランス 年末 仕事整理 | 季節性あり（12月向け）・11月以降着手推奨 |
 | Notion データベース タスク管理 フリーランス | notion記事の詳細発展版 |
+| フリーランス 新規クライアント 開拓 方法 | 下半期計画記事（KW-M）の関連記事候補 |
