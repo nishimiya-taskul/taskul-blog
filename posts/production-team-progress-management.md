@@ -1,7 +1,7 @@
 ---
 title: "制作会社の進行管理が属人化する原因と解消する5ステップ"
-description: "制作会社の進行管理が属人化する3つの典型パターンと、明日から始められる解消5ステップを解説。小規模チームに合うツール選びまで紹介します。"
-date: "2026/04/21"
+description: "制作会社の進行管理が属人化する3パターンを診断し、担当者不在でもチーム全員が確認できる体制を5ステップで構築する方法を解説。Backlog・Jooto・TASKULの小規模チーム向け比較表と運用ルールテンプレート付き。"
+date: "2026/10/25"
 category: "案件管理"
 tags: ["進行管理", "属人化", "制作会社", "チーム管理"]
 thumbnail: "/column/images/articles/production-team-progress-management/thumbnail.png"
