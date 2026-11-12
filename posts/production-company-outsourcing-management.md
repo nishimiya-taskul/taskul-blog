@@ -1,5 +1,5 @@
 ---
-title: "制作会社の外注・フリーランス管理術｜発注から進行・請求まで仕組み化する"
+title: "制作会社の外注・フリーランス管理術｜発注・進行・請求まで仕組み化"
 description: "制作会社が外注パートナーやフリーランスを管理する際の、発注・進行・請求の仕組み化を解説。任せきりでも丸投げでもない、品質と納期を守る現実的な外注管理の方法を、発注側の実体験からまとめました。"
 thumbnail: "/column/images/articles/production-company-outsourcing-management/thumbnail.png"
 date: "2026/06/01"
